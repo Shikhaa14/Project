@@ -67,6 +67,32 @@ header{
 .menu{
     cursor: pointer;
 }
+/* width */
+.sidenav::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+.sidenav::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.sidenav::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 16px;
+}
+
+/* Handle on hover */
+.sidenav::-webkit-scrollbar-thumb:hover{
+    background: white;
+}
+.menu-link a{
+    font-size: 70px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    color: black;
+}
 .hero-slider{
     position: relative;
 }
