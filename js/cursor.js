@@ -29,8 +29,8 @@ function followMouse() {
 
        //Easing motion
        //Progressive reduction of distance 
-       divpos.x += distX / 5;
-       divpos.y += distY / 5;
+       divpos.x += distX / 3;
+       divpos.y += distY / 3;
 
        el.style.left = divpos.x + "px";
        el.style.top = divpos.y + "px";
