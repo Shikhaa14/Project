@@ -410,4 +410,7 @@ footer a{
         margin-bottom: 1rem;
     }
     #somediv{display: none;}
+    .menu-link a{
+    font-size: 40px;
+    }
 }
