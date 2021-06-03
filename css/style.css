@@ -124,7 +124,7 @@ header{
     transform: rotate(-90deg);
     color: black;
     cursor: pointer;
-    z-index: 99;
+    z-index: 99999;
 }
 .hero-slider .scroll-down::after{
     content: "";
@@ -142,7 +142,7 @@ header{
     bottom: 50%;
     right: 10px;
     transform: rotate(-90deg);
-    z-index: 99;
+    z-index: 99999;
 }
 .hero-slider .social i{
     color: black;
