@@ -1,0 +1,402 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+::selection {
+    background: black; /* WebKit/Blink Browsers */
+    color:white;
+}
+::-moz-selection {
+    background: black; /* Gecko Browsers */
+}
+.navbar-brand{
+    width: 105px;
+    height: 37px;
+}
+a, a:hover{
+    text-decoration: none; 
+    transition: 0.5s ease;
+    scroll-behavior: smooth !important;
+}
+.btn.focus, .btn:focus{box-shadow: none;}
+header{
+    background-color: white;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.menu{
+    cursor: pointer;
+}
+.hero-slider{
+    position: relative;
+}
+.hero-slider .carousel-item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+.hero-slider .text{
+    width: 100%;
+    height: inherit;
+    padding-bottom: 100px;
+}
+.hero-slider .text h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.hero-slider .text p{
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.hero-slider li{
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    border: 2px solid transparent !important;
+    background-color: transparent !important;
+}
+.hero-slider li::before{
+    content: "";
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.hero-slider li.active{
+    border-color: black !important;
+}
+.hero-slider li.active::before{
+    background-color: black
+}
+.hero-slider .scroll-down{
+    position: absolute;
+    bottom: 20%;
+    transform: rotate(-90deg);
+    color: black;
+    cursor: pointer;
+    z-index: 99;
+}
+.hero-slider .scroll-down::after{
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 10px;
+}
+.hero-slider .social{
+    position: absolute;
+    width: 150px;
+    bottom: 50%;
+    right: 10px;
+    transform: rotate(-90deg);
+    z-index: 99;
+}
+.hero-slider .social i{
+    color: black;
+}
+marquee{
+    padding: 20px 0;
+    font-size: 120px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-transform: capitalize;
+}
+
+/* work section  */
+.work-section{
+    margin: 4rem 0;
+}
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+}
+.work-section .col-md-4 , .work-section .col-md-8{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.work-section .img-div{
+    position: relative;
+    transition:  all .5s;
+}
+.work-section .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    opacity: 0;
+}
+.work-section .img-div:hover .overlay{
+    opacity: 1;
+}
+.work-section .text{
+   width: 100%;
+   height: 100%; 
+}
+.work-section .text p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .78px;
+}
+.work-section .wrap{
+    width: 70%;
+    height: 70%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.work-section .wrap a{
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.video-section{
+    margin: 5rem 0;
+}
+.modal-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.video-section .video-wrap{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/video-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.video-section .video-wrap button{
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.arrows{
+    width: 100%;
+    height: auto;
+    background-image: url('../images/arrows.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 6rem 0;
+}
+.arrows p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.touch{
+    margin: 3rem 0;
+}
+.touch h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.touch input{
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #F7F7F7;
+    border: none;
+    outline: none;
+    margin: 10px 10px 10px 0;
+}
+.touch button{
+    background-color: #F7F7F7;
+    border: 1px solid #d6d6d6;
+    padding: 15px 30px;
+    height: fit-content;
+    margin: 10px 10px 10px 10px;
+}
+footer p{
+    color: #818181;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+footer a{
+    color: black;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.copyrights p{
+    font-size: 15px;
+    color: #818181;
+}
+
+#somediv {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: black;
+	position:absolute;
+    z-index: 999999;
+}
+
+.work-slider {
+    margin-bottom: 5rem;
+}
+.work-slider h6 {
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.work-slider p {
+    font-size: 13px;
+    color: gray;
+}
+
+.work-slider .text {
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.work-slider span {
+    font-size: 18px;
+    color: grey;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.work-slider .subtext {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.approch p {
+    font-size: 15px;
+    margin-bottom: 3rem;
+}
+.approch h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.portfolio .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.portfolio .owl-nav button {
+    outline: none;
+}
+.portfolio .owl-nav button h6 {
+    font-weight: bold;
+}
+
+.portfolio .img, .work-section .img-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.portfolio .overlay , .work-section .overlay {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: inherit;
+    background: #000000cc;
+    transition: 0.5s;
+}
+.portfolio .overlay a , .work-section .overlay a{
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+.portfolio .img:hover .overlay , .work-section .img-div:hover .overlay{
+    top: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 780px){
+    .scroll-down{display: none;}
+    .hero-slider .social{bottom: 80%; right: -38px;}
+    marquee{font-size: 100px;}
+    .work-section{margin: 1rem;}
+    .title {font-size: 40px;}
+    .work-section .wrap{margin-top: 1rem ; width: 300px; height: 300px;}
+    iframe{height: auto;}
+    .touch .d-flex{flex-direction: column;}
+    .touch button{margin: 0;}
+    .work-slider .text , .work-slider .subtext {
+        font-size:22px;
+    }
+    .work-slider span {
+        font-size:12px
+    }
+    .work-slider {
+        margin-bottom: 1rem;
+    }
+}
