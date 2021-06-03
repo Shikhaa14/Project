@@ -23,6 +23,7 @@ a, a:hover{
     scroll-behavior: smooth !important;
 }
 .btn.focus, .btn:focus{box-shadow: none;}
+.mt{margin-top: 50px}
 header{
     background-color: white;
 }
