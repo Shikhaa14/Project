@@ -1,3 +1,17 @@
+@font-face {
+  font-family: theater;
+  src: url("/Theater_Bold.otf");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+marquee {
+  font-family: theater !important;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -49,6 +63,8 @@ header{
     color: #818181;
     display: block;
     transition: 0.3s;
+  font-family: theater !important;
+  letter-spacing: 3px;
 }
 
 /* When you mouse over the navigation links, change their color */
