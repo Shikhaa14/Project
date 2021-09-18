@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiversionX</title>
+
+    <link rel="stylesheet" href="Assets/css/bootstrap.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/responsive.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- MultiStep Form -->
+                <form method="post" novalidate>
+                    <div id="msform" class="center-box">
+
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active">Type</li>
+                            <li>Thickness</li>
+                            <li>Material</li>
+                            <li>Options</li>
+                        </ul>
+                        <!-- fieldsets -->
+
+
+                        <!-- 1st step --------------------->
+                        <fieldset>
+                            <h3 class="fs-title"> Choose a Lens Type <div>60% OFF LENSES AND ADD-ONS WITH CODE LOOK60</div></h3>
+                            
+                            <div class="row pricing-cards">
+
+                                <div class="col-md-3">
+                                    <div class="box" id="box1">
+                                        <label>
+                                            <div class="radio-btn">
+                                                <h4 id="title1">Clear Lens - Indoor/Outdoor</h4>
+                                                <input type="radio" class="radio price1" name="optradio" id="price1">
+                                            </div>
+                                            <ul>
+                                                <li>Clear Lenses</li>
+                                                <li>AntiReflective Treatment</li>
+                                            </ul>
+                                            <p class="price">Starting at: <del>Retail Price : $59.98</del></p>
+                                            <h5>With promo : $115.00</h5>
+                                        </label>
+                                        
+                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingOne">
+                                                    <h3 class="panel-title">
+                                                        <a class="collapsed"  data-toggle="collapse" data-parent="#accordion" href="#collapse1st" aria-expanded="false" aria-controls="collapse1st">
+                                                            Details
+                                                            <img src="Assets/images/plus.svg" class="img-fluid" alt="img">
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                                <div id="collapse1st" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                    <div class="panel-body">
+                                                        <p>Single Vision</p>
+                                                        <ul>
+                                                            <li>Used by the majority of glasses wearers</li>
+                                                            <li>Only for nearsighted or farsighted vision</li>
+                                                            <li>Typically prescribed for children’s lenses and people under forty</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="box" id="box2">
+                                        <label> 
+                                            <div class="radio-btn">
+                                                <h4 id="title2">Transitions(R) Lens - Indoor/Outdoor</h4>
+                                                <input type="radio" name="optradio" class="radio price2" id="price2">
+                                            </div>
+                                            <ul>
+                                                <li>Transitions(R) Lenses: Clear to Gray , Clear to Brown</li>
+                                                <li>AntiReflective Treatment</li>
+                                            </ul>
+                                            <p class="price">Starting at: <del>Retail Price : $399.06</del></p>
+                                            <h5>With promo : $135.99</h5>
+                                        </label>
+
+                                        <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingTwo">
+                                                    <h3 class="panel-title">
+                                                        <a class="collapsed"  data-toggle="collapse" data-parent="#accordion2" href="#collapse2nd" aria-expanded="false" aria-controls="collapse2nd">
+                                                            Details
+                                                            <img src="Assets/images/plus.svg" class="img-fluid" alt="img">
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                                <div id="collapse2nd" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                    <div class="panel-body">
+                                                        <ul>
+                                                            <li>Transitions(R) Signature(R) Gen8(TM)</li>
+                                                            <li>Fully clear indoors</li>
+                                                            <li>Darkens outdoors in seconds</li>
+                                                            <li>Returns to clear faster than ever</li>
+                                                            <li>Protects your eyes indoors and outdoors</li>
+                                                            <li>Blocks at least 20% of Harmful Blue Light indoors.</li>
+                                                            <li>Blocks up to 85% of Harmful Blue Light outdoors</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <h6 class="text-center detail"><b>
+                                All lenses manufactured by The Essilor Group and include UV Protection and a Scratch Resistant Coating.
+                            </b></h6>
+                            
+                            <Button type="button" name="next" class="next action-button"><i class="fas fa-chevron-right"></i></Button>
+
+                        </fieldset>
+
+                        
+
+                        <!-- 2nd step -------------------------------------->
+                        <fieldset>
+                            <h3 class="fs-title">Do You Have Your Prescription Available? <div>60% OFF LENSES AND ADD-ONS WITH CODE LOOK60</div></h3>
+                            
+                            <div class="row pricing-cards">
+
+                                <div class="col-md-3">
+                                    <div class="box" id="lens-box1">
+                                        <label>
+                                            <div class="radio-btn">
+                                                <h4 id="lens-title1">Standard Thickness</h4>
+                                                <input type="radio" class="radio thick" name="optradio" id="thick">
+                                            </div>
+                                            <p class="price">$0</p>
+                                        </label>
+                                        
+                                        <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingTwoo">
+                                                    <h3 class="panel-title">
+                                                        <a class="collapsed"  data-toggle="collapse" data-parent="#accordion2" href="#collapse20nd" aria-expanded="false" aria-controls="collapse20nd">
+                                                            Details
+                                                            <img src="Assets/images/plus.svg" class="img-fluid" alt="img">
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                                <div id="collapse20nd" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoo">
+                                                    <div class="panel-body">
+                                                        <p>Includes Crizal Alize UV(TM) AntiReflective treatment. Provides the following:</p>
+                                                        <ul>
+                                                            <li>Reduces Glare</li>
+                                                            <li>Resists Scratches</li>
+                                                            <li>Repels Water EASIER</li>
+                                                            <li>Resists Smudges EASIER</li>
+                                                            <li>UV Protection (25 E-SPF)</li>
+                                                        </ul>
+
+                                                        <p>Includes Airwear(R) poly material. Great for</p>
+                                                        <ul>
+                                                            <li>Simple prescriptions</li>
+                                                            <li>Active Users (due to the lenses lightness, safety, and durability.)</li>
+                                                            <li>High Impact Resistance</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="box" id="lens-box2">
+                                        <label> 
+                                            <div class="radio-btn">
+                                                <h4 id="lens-title2">Thinner Lens</h4>
+                                                <input type="radio" name="optradio" class="radio thin" id="thin">
+                                            </div>
+                                            <p class="price">$65</p>
+                                        </label>
+
+                                        <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingThree">
+                                                    <h3 class="panel-title">
+                                                        <a class="collapsed"  data-toggle="collapse" data-parent="#accordion3" href="#collapse3rd" aria-expanded="false" aria-controls="collapse3rd">
+                                                            Details
+                                                            <img src="Assets/images/plus.svg" class="img-fluid" alt="img">
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                                <div id="collapse3rd" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                    <div class="panel-body">
+                                                        <p>Includes Crizal Avance UV(TM) AntiReflective treatment. Provides the following:</p>
+                                                        <ul>
+                                                            <li>Reduces Glare</li>
+                                                            <li>2x More Scratch Resistant</li>
+                                                            <li>Repels Dust (Stays Cleaner Longer)</li>
+                                                            <li>Repels Water</li>
+                                                            <li>Resists Smudges</li>
+                                                            <li>UV Protection (35 E-SPF)</li>
+                                                        </ul>
+
+                                                        <p>Includes Thin&Lite(R) 1.67 High Index material.</p>
+                                                        <ul>
+                                                            <li>Great for strong prescriptions</li>
+                                                            <li>Flatter and thinner lens than standard plastic (poly).</li>
+                                                            <li>Offers more clarity.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <h6 class="text-center detail"><b>
+                                If you don’t have your prescription information at this time, complete your order and one of our trained opticians will assist you with your prescription.
+                            </b></h6>
+                            
+
+                            <button type="button" name="previous" class="previous action-button"><i class="fas fa-chevron-left"></i></button>
+                            <button type="button" name="next" class="next action-button"><i class="fas fa-chevron-right"></i></button>
+                        </fieldset>
+
+                        <!-- 3rd step ------------------------------------------------>
+                        <fieldset>
+                            <h3 class="fs-title">Select Transitions Color <div>60% OFF LENSES AND ADD-ONS WITH CODE LOOK60</div></h3>
+                            
+                            <div class="row pricing-cards">
+
+                                <div class="col-md-3">
+                                    <div class="box" id="grey-box1">
+                                        <label>
+                                            <div class="radio-btn">
+                                                <h4 id="grey-title1">Transitions Gray</h4>
+                                                <input type="radio" class="radio grey" name="optradio" id="grey">
+                                            </div>
+                                            <img src="Assets/images/lens.png" class="img-fluid lens" alt="">
+                                            <!-- <p class="price text-center"><del>Retail Price : $59.98</del></p>
+                                            <h5>With promo : $00.99</h5> -->
+                                        </label>  
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="box" id="brown-box2">
+                                        <label> 
+                                            <div class="radio-btn">
+                                                <h4 id="brown-title2">Transitions Brown</h4>
+                                                <input type="radio" name="optradio" class="radio brown" id="brown">
+                                            </div>
+                                            <img src="Assets/images/lens.png" class="img-fluid lens" alt="">
+                                            <!-- <p class="price text-center"><del>Retail Price : $109.98</del></p>
+                                            <h5>With promo : $00.99</h5> -->
+                                        </label>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                           
+                            
+                            <button type="button" name="previous" class="previous action-button"><i class="fas fa-chevron-left"></i></button>
+                            <button type="button" name="next" class="next action-button"><i class="fas fa-chevron-right"></i></button>
+                        </fieldset>
+
+
+
+                        <!-- 4th step -------------------------------------->
+                        <fieldset>
+                            <h3 class="fs-title">Finally, Select Lens Options <div>60% OFF LENSES AND ADD-ONS WITH CODE LOOK60</div></h3>
+                            
+                            <div class="row pricing-cards">
+
+                                <div class="col-md-3">
+                                    <div class="box" id="last-box1">
+                                        <label>
+                                            <div class="radio-btn">
+                                                <h4 id="last-title1">Basic</h4>
+                                                <input type="radio" class="radio last1" name="optradio" id="last1">
+                                            </div>
+                                            <img src="Assets/images/lens.png" class="img-fluid lens" alt="">
+                                            <p class="price text-center">Included<br>No Additional Charge</p>
+                                            <ul class="tick">
+                                                <li>SV / Polycarbonate T8 Grey / Alize AR</li>
+                                                <li>SV / Polycarbonate T8 Brown / Alize AR</li>
+                                            </ul>
+                                            <h5>Does not include recommended anti-reflective coating</h5>
+                                        </label>  
+
+                                        <div class="panel-group" id="accordion6" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingSix">
+                                                    <h3 class="panel-title">
+                                                        <a class="collapsed"  data-toggle="collapse" data-parent="#accordion6" href="#collapse6th" aria-expanded="false" aria-controls="collapse6th">
+                                                            Details
+                                                            <img src="Assets/images/plus.svg" class="img-fluid" alt="img">
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                                <div id="collapse6th" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                                    <div class="panel-body">
+                                                        <p>Single Vision</p>
+                                                        <ul class="tick">
+                                                            <li>Used by the majority of glasses wearers</li>
+                                                            <li>Only for nearsighted or farsighted vision</li>
+                                                            <li>Typically prescribed for children’s lenses and people under forty</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="box" id="last-box2">
+                                        <label> 
+                                            <div class="radio-btn">
+                                                <h4 id="last-title2">Upgraded</h4>
+                                                <input type="radio" name="optradio" class="radio last2" id="last2">
+                                            </div>
+                                            <img src="Assets/images/lens.png" class="img-fluid lens" alt="">
+                                            <p class="price text-center"><del>Retail Price : $100.98</del></p>
+                                            <h5>With promo : $40.00</h5>
+                                            <ul class="tick">
+                                                <li>ASV / 1.67 Trans 8 Grey / Avance AR</li>
+                                                <li>ASV / 1.67 Transitions 8 Brown / Avance AR</li>
+                                            </ul>
+                                            <h5><span>Plus:</span> Premium Anti-Reflective</h5>
+                                            <img src="Assets/images/duraclear.png" class="img-fluid lens" alt="">
+                                        </label>
+
+                                        <div class="panel-group" id="accordion7" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingSeven">
+                                                    <h3 class="panel-title">
+                                                        <a class="collapsed"  data-toggle="collapse" data-parent="#accordion7" href="#collapse7th" aria-expanded="false" aria-controls="collapse7th">
+                                                            Details
+                                                            <img src="Assets/images/plus.svg" class="img-fluid" alt="img">
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                                <div id="collapse7th" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                                    <div class="panel-body">
+                                                        <p>Single Vision</p>
+                                                        <ul class="tick">
+                                                            <li>Used by the majority of glasses wearers</li>
+                                                            <li>Only for nearsighted or farsighted vision</li>
+                                                            <li>Typically prescribed for children’s lenses and people under forty</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <h6 class="text-center detail"><b>
+                                For other lens options and configurations, please order by phone at 1–111-222-3333
+                            </b></h6>
+                            
+
+                            <button type="button" name="previous" class="previous action-button"><i class="fas fa-chevron-left"></i></button>
+                            <button type="" name="submit" class="submit action-button" ><i class="fas fa-check"></i></button>
+                        </fieldset>
+                    
+                    </div>
+                </form>
+                <!-- /.MultiStep Form -->
+
+            </div>
+        </div>
+    </div>
+
+    <script src="Assets/js/jquery-3.5.1.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <script src="Assets/js/bootstrap.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/main.js"></script>
+</body>
+</html>

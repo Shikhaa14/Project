@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a, a:hover{
+  text-decoration: none !important;
+}
+
+.profilepress-reg-status {
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 1.471;
+    padding: 10px 19px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-weight: normal;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    margin: 5px 0;
+  }
+  /*form styles*/
+  
+  #msform {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+  }
+  
+  #msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+    /*stacking fieldsets above each other*/
+    position: absolute;
+  }
+  /*Hide all except first fieldset*/
+  
+  #msform fieldset:not(:first-of-type) {
+    display: none;
+  }
+  /*inputs*/
+  
+  #msform input,
+  #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+  }
+  /*buttons*/
+  
+  #msform .action-button {
+    width: 50px;
+    height: 50px;
+    background: #BA2130;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    position: absolute;
+    bottom: 20px;
+  }
+
+  #msform .action-button.next, #msform .action-button.submit{
+    right: 0;
+  }
+
+  #msform .action-button.previous  {
+    right: 55px;
+  }
+  
+  #msform .action-button:hover,
+  #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #BA2130;
+  }
+  /*headings*/
+  
+  .fs-title {
+    font-size: 21px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fs-title div{
+    font-size: 18px;
+    background-color: #BA2130;
+    color: white;
+    padding: 10px 40px;
+    font-weight: normal;
+    letter-spacing: .7px;
+    width: fit-content;
+    position: relative;
+  }
+  .fs-title div::before{
+    content: '';
+    width: 0; 
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 21px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #BA2130;
+  }
+  .fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  /*progressbar*/
+  
+  #progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+  }
+  
+  #progressbar li {
+    list-style-type: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: .7px;
+    float: left;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  #progressbar li:before {
+    /* content: counter(step); */
+    content: '';
+    counter-increment: step;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 15px;
+    color: #333;
+    background: #DC8F97;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    margin: 10px auto 10px auto;
+  }
+  
+  #progressbar:before{
+    content: '';
+    width: 65%;
+    height: 5px;
+    background-color: #F7E7E9;
+    position: absolute;
+    top: 18px;
+  }
+
+  #progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    
+    content: none;
+  }
+  /*marking active/completed steps green*/
+  /*The number of the step and the connector before it = green*/
+  
+  #progressbar li.active:before,
+  #progressbar li.active:after {
+    background: #BA2130;
+    color: white;
+  }
+  #progressbar li.active:before{
+    content: '';
+  }
+
+  .radio-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .pricing-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  .pricing-cards .box{
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 8px #00000029;
+    border-radius: 4px;
+  }
+  .pricing-cards  input[type='radio']{
+    position: relative;
+    width: fit-content !important;
+  }
+  .pricing-cards  input[type='radio']:checked:focus  .box{
+    border-color: #BA2130;
+  }
+  .pricing-cards  input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -8px;
+    left: -3px;
+    right: 0px;
+    margin: auto;
+    position: absolute;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid rgb(190, 189, 189);
+  }
+
+  .pricing-cards  input[type='radio']:checked:after {
+      width: 25px;
+      height: 25px;
+      border-radius: 15px;
+      top: -8px;
+      left: -3px;
+      right: 0px;
+      margin: auto;
+      position: absolute;
+      background: url('../images/checked.svg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid white;
+  }
+  .pricing-cards input{
+    margin-top: 15px;
+  }
+  .pricing-cards label{
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .pricing-cards h4{
+    line-height: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .pricing-cards  ul{
+    list-style-position: inside;
+  }
+  .pricing-cards  ul li{
+    line-height: 27px;
+    font-size: 13px;
+  }
+  .pricing-cards p{
+    line-height: 28px;
+    font-weight: lighter;
+  }
+  .pricing-cards .panel-group{
+    margin-bottom: 0;
+  }
+  .pricing-cards .price{
+    font-weight: 600 !important; 
+  }
+  .pricing-cards .price del{
+    color: #BA2130;
+    opacity: .54;
+    font-weight: normal;
+  }
+  .pricing-cards h5{
+    text-align: center;
+    color: #BA2130;
+    font-weight: 600;
+  }
+  .pricing-cards .panel-heading{
+    background-color: #BA2130;
+    color: white;
+    padding: 0;
+    border: none;
+  }
+  .pricing-cards .panel-heading h3 a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 0 0 3px;
+  }
+  .pricing-cards .panel-default{
+    border: none;
+  }
+  .pricing-cards .panel-body p{
+    font-weight: 600;
+  }
+  .pricing-cards .panel-body ul li{
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    line-height: 22px;   
+    margin-bottom: 8px;
+  }
+  .pricing-cards .panel-body ul li::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: rgba(186, 33, 48, .54);  
+    position: absolute;
+    top: 8px;
+    left: 0;
+    border-radius: 50%;
+  }
+  fieldset h6.detail{
+    font-size: 15px;
+    width: 70%;
+    margin: 7rem auto 0;
+  }
+  fieldset h6.detail span{
+    color: #BA2130;
+  }
+  fieldset .lens{
+    display: flex;
+    margin: auto;
+  }
+  .box .tick li{
+    position: relative;
+    list-style-position: inside;
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  .box .tick li::before{
+    content: '';
+    width: 15px;
+    height: 10px;
+    background-image: url('../images/tick.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    position: absolute;
+    top: 8px;
+    left: 0;
+    border-radius: 50%;
+  }

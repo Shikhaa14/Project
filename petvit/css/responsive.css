@@ -1,0 +1,117 @@
+/* mobile screen  */
+@media screen and (min-width: 320px) and (max-width: 780px){
+    header{position: relative;}
+    header .logo {text-align: right !important;}
+    header .main-nav{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: fit-content;
+        z-index: 9999999;
+    }
+    header .navbar-collapse.show{
+        background: white;
+        padding: 20px 10px;
+    }
+    .hero{margin-top: 20px;}
+    footer .col-md-3{height: auto;}
+    .groombox .owl-nav, .product .owl-nav, .insta .owl-nav{display: none !important;}
+    .banner-img .col-md-6:nth-child(1){margin-bottom: 20px;}
+    .banner-img .overlay{bottom: 0px; right: 15px;}
+    .banner-img .btn-shop{font-size: 9px;}
+    .groombox , .best-for-pets, .certified , .product {padding-bottom: 0 !important;}
+    .banner-img, .best-for-pets, .certified , .product {margin-top: 0 !important;}
+    .groombox .item, .best-for-pets .col-md-3 a, .certified, .review p{height: auto;}
+    .tab-pane .box{margin-bottom: 30px;}
+    .details{margin-top: 40px;}
+    .details .input-group, .cart .input-group{width: 100% !important;}
+    .details .buttons, .login-box .buttons, .policy{flex-direction: column;}
+    .details .buttons .btn, .login-box .buttons .btn{width: 100%; margin-bottom: 10px;}
+    .details .pincode .check-btn{width: 100%;     margin-left: 0px; margin-top: 10px;}
+    .slider .slider-nav{order: 2;}
+    .slider-for .box img, .slider-nav img{width: 100%; height: auto;}
+    .slider-for .box, .slider-nav .box{padding: 0;}
+    .slider i.fa-arrow-circle-right{position: absolute; right: 0; font-size: 25px; z-index: 9999;}
+    .slider i.fa-arrow-circle-left{position: absolute; left: 0; font-size: 25px; z-index: 9999;}
+    .product-details .tab-pane{padding: 10px 12px;}
+    .tick li{    background-position-y: 8px; margin-left: 5px}
+    .review-section .item{padding: 0;}
+    .review-section .item .letter{display: none;}
+    .bg2{padding: 50px 26px !important;}
+    .bg2 h2{font-size: 1.5rem;}
+    .login-box{padding: 0 30px;}
+    .login-box form .d-flex, .cart .d-flex{flex-direction: column;}
+    .login-box form .d-flex a{margin-bottom: 10px;}
+    .login-box .col-md-5{padding-left: 0 !important; margin-top: 40px;}
+    .checkout .checkout-box{padding: 55px 17px; margin-top: 50px;}
+    .order aside{padding: 10px;}
+    .order aside .navbar h6{padding-top: 15px;}
+    .order aside .navbar span i{
+        font-size: 30px;
+        color: white;
+        padding-top: 9px;
+    }
+    .order main{padding: 10px;}
+    .order .history h4{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .account .add, .account .return{margin-bottom: 15px; width: 100%;}
+}
+
+/* ipad  */
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+    footer .links i {
+        font-size: 19px;
+        margin-right: 15px;
+    }
+    footer input{margin-top: 25px;}
+    .best-for-pets .col-md-3 a{padding: 0px;}
+    .banner-img .col-md-6:nth-child(1){margin-bottom: 0;}
+    .banner-img .overlay{bottom: 30px;}
+    .product .img-div span{padding: 11px 15px;}
+    .review-section .item .box .col-md-3, .login-box .col-md-5{display: none;}
+    .review-section .item .box{    padding: 15px 10px;}
+    .login-box .row{justify-content: center;}
+    .account .add, .account .return{margin-bottom: 0px; width: unset;}
+    .order aside {padding: 0px;}
+    .order .nav-link{font-size: 14px;}
+}
+
+/* large screen  */
+@media screen and (min-width: 1920px) and (max-width: 5000px){
+    .links{
+        justify-content: unset !important;
+    }
+    .links i{
+        margin-right: 35px;
+    }
+    .nav-item{
+        margin-right: 30px;
+    }
+    .main-nav{
+        padding: 10px 80px;
+    }
+    .logo img{height: unset !important;}    
+    footer .links i{
+        font-size: 30px;
+        margin-right: 30px;
+    }
+    .buttons .btn{font-size: unset;}
+    .nav-item{
+        margin-right: 8px;
+        font-size: 14px;
+    }
+    .nav-link{letter-spacing: 0.86px;}
+    .slider-for .box img{
+        width: 360px;
+        height: 360px;
+    }
+    .slider-nav img{
+        width: 105px;
+        height: 105px;
+    }
+    .details  .policy p{font-size: unset;}
+    .review-section .item{padding: 30px;}
+    .review-section .item .letter{width: 80px; height: 80px;}
+}
