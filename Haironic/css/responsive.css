@@ -1,0 +1,160 @@
+/* mobile screen  */
+@media screen and (min-width: 320px) and (max-width: 780px){
+    .mt{margin-top: 58px;}
+    header .navbar-collapse.collapse.show{height: 100vh;}
+    header{
+        padding:0;
+    }
+    .navbar-brand{
+        width: 35%;
+    }
+    .nav-item{
+        margin: 0 7px;
+    }
+    header .navbar-nav {margin-top: 20px; height: 60vh; display: flex; justify-content: space-around;}
+    .nav-link{
+        font-size: 14px;
+    }
+    footer img{
+        width: 75%;
+    }    
+    footer .col-md-3{
+        padding-left: 0
+    }
+    footer .col-md-3{
+        border-right: none;
+        height: auto;
+        margin-bottom: 28px;
+    }
+    footer .col-md-3:nth-child(1){
+        height: 110px;
+    }
+    footer .row{
+        padding: 60px 15px 0px 15px;
+    }
+    footer form{width: 100%;}
+    footer input{margin-top: 27px;}
+    footer .btn{    right: 6px; top: 1px;}
+    .footer-bottom p{font-size: 12px;}
+    .problems{background-position: center; background-size: cover;}
+    section.problems::after{height: 0;}
+    .whyus{padding: 0;}
+    .whyus .text{height: auto;}
+    .whyus img{padding: 40px;}
+    .hero .carousel-indicators {
+        bottom: 5px !important;
+    }
+    .slider .owl-theme{margin: 33px 0;}
+    .hero .carousel-indicators li{width: 10px; height: 10px;}
+    .problems h2{background-image: none; height: auto; font-size: 20px; line-height: 30px; width: 100%;}
+    .why-us h2, .why-us p , .why-us .row{margin-bottom: 0; margin-top: 0 !important;}
+    .contact-form .d-flex{display: block !important;}
+    .contact-form .form-group{width: 100% ; padding-right: 0px;}
+    .details{margin-top: 50px; text-align: center;}
+    .problems .tab-content .row, .problems .logo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .bg .container{left: -10px; top: 0; font-size: 10px;}
+    .product-detail-page.pl-5, .product-details.pl-5{padding-left: 10px !important; padding-right: 10px !important;}
+    .tab-pane .box{margin-bottom: 30px;}
+    .details{margin-top: 40px;}
+    .details .input-group, .cart .input-group{width: 100% !important;}
+    .details .buttons, .login-box .buttons, .policy{flex-direction: column;}
+    .details .buttons .btn, .login-box .buttons .btn{width: 100%; margin-bottom: 10px;}
+    .details .pincode .check-btn{width: 100%;     margin-left: 0px; margin-top: 10px;}
+    .product-detail-page  .slider .slider-nav{order: 2;}
+    .slider-for .box img, .slider-nav img{width: 100%; height: auto;}
+    .slider-for .box, .slider-nav .box{padding: 0;}
+    .product-detail-page  .slider i.fa-arrow-circle-right{position: absolute; right: 0; font-size: 25px; z-index: 9999;}
+    .product-detail-page  .slider i.fa-arrow-circle-left{position: absolute; left: 0; font-size: 25px; z-index: 9999;}
+    .product-details .tab-pane{padding: 10px 12px;}
+    .tick li{    background-position-y: 8px; margin-left: 5px}
+    .review-section .item{padding: 0;}
+    .review-section .item .letter{display: none;}
+    .review-section .item .box{padding: 10px;}
+    .review-section .item .col-md-9 div:nth-child(2){flex-direction: column;}
+    .bg2{padding: 50px 26px !important;}
+    .bg2 h2{font-size: 1.5rem;}
+    .login-box{padding: 0 30px;}
+    .login-box form .d-flex, .cart-page .d-flex{flex-direction: column;}
+    .login-box form .d-flex a{margin-bottom: 10px;}
+    .details .input-group, .cart-page .input-group{width: 90% !important;}
+    .login-box .col-md-5{padding-left: 0 !important; margin-top: 40px;}
+    .checkout .checkout-box{padding: 55px 17px; margin-top: 50px;}
+    .order aside{padding: 10px;}
+    .order aside .navbar h6{padding-top: 15px;}
+    .order aside .navbar span i{
+        font-size: 30px;
+        color: white;
+        padding-top: 9px;
+    }
+    .order main{padding: 10px;}
+    .order .history h4{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .account .add, .account .return{margin-bottom: 15px; width: 100%;}
+
+
+    .frequently ul li{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .frequently ul li .cbb-frequently-bought-plus-icon{height: 50px !important; line-height: 50px !important;}
+}
+
+/* ipad  */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .mt{margin-top: 50px;}
+    header{
+        padding:0;
+    }
+    footer{padding-top: 20px;}
+    .navbar-brand{
+        width: 11%;
+    }
+    .nav-item{
+        margin: 0;
+    }
+    .nav-link{
+        font-size: 8px;
+    }
+    footer img{
+        width: 75%;
+    }
+    footer .col-md-3{
+        padding-left: 10px
+    }
+    .footer-bottom{margin-top: 3px;}
+    /* footer form{display: none !important;} */
+    footer .links i {
+        font-size: 21px;
+        margin-right: 15px;
+    }
+    footer h5{font-size: 12px;}
+    footer a{font-size: 11px;}
+    .details .input-group, .cart-page .input-group{width: 30% !important;}
+    .account .add, .account .return{margin-bottom: 0px; width: unset;}
+    .order aside {padding: 0px;}
+    .order .nav-link{font-size: 14px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+    .problems .tab-content .row, .problems .logo{
+        display: grid;
+        grid-template-columns: 35% 35% 35%;
+        margin: 0 auto;
+    }
+    .whyus img {
+        padding: 0px;
+    }
+}
+/* large screen  */
+@media screen and (min-width: 1920px) and (max-width: 5000px){
+    .navbar-brand{
+        width: unset;
+    }
+    .mt{margin-top: 120px;}
+}

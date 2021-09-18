@@ -1,0 +1,737 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a, a:hover{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.hero .carousel{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.carousel-inner {
+    height:100vh;
+}
+.carousel-item .box{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-position: no-repeat;
+    background-size: cover;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.carousel-item .box h1{
+    font-family: 'Great Vibes', cursive;
+    color: #D49E54;
+    margin-bottom: 0;
+}
+.datepicker{
+   width: 60%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+    outline: none;
+}
+.carousel-item .box h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: white;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.carousel-item .box p{
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 16px;
+    letter-spacing: 1.58px;
+}
+.carousel-item .box .time{
+    color: #EBCE5B;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.header .name{
+    padding: 10px 0;
+    font-family: 'Great Vibes', cursive;
+}
+.header .name h1{
+    margin-bottom: 0;
+    color: #EBCE5B;
+    text-shadow: 0px 3px 3px #000000BD;
+}
+nav{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) 0% 0% no-repeat padding-box !important; 
+    box-shadow: 0px 3px 24px #00000029 !important;
+    z-index: 1;
+    padding: 1.2rem !important;
+}
+.nav-item{
+    margin: 0 30px;
+}
+.nav-link{
+    color: white !important; 
+    transition: 0.5s;
+}
+.nav-link:hover{
+    color: #EBCE5B !important;
+}
+.nav-link.active{
+    border-bottom: 1px solid #EBCE5B;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.hero .icons i{
+    color: white;
+    margin-left: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hero .icons i:hover{
+    color: #EBCE5B;
+}
+.images{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.images .col-md-3{
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.images img{
+    height: 150px;
+}
+.images h6{
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #00000029;
+}
+.aboutus .row{
+    margin-top: 7rem;
+}
+.aboutus h1{
+    color: #D49E54;
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+}
+.aboutus p{
+    color: #263855;
+    letter-spacing: 0.6px;
+    line-height: 29px;
+    font-weight: 600;
+    position: relative;
+}
+.aboutus p:nth-child(2)::before{
+    content: "Entdecken";
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    font-size: 150px;
+    color: rgba(212, 158, 84, 0.08);
+    top: 80px;
+}
+.aboutus .row:nth-child(2) p:nth-child(2)::before{
+    content: "";
+}
+.aboutus .img-box .item img{
+    width: 90%;
+    height: 350px;
+}
+.aboutus .img-box .img2 img{
+    width: 100%;
+    height: 400px;
+}
+.home-btn{
+    padding: 13px 30px;
+    background: #EBCE5B;
+    box-shadow: 0px 3px 8px #0000005C;
+    color: white;
+    text-shadow: 0px 3px 6px #0000003D;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    transition: 0.8s;
+}
+.btn:hover{
+    color: white;
+    box-shadow: 0px 3px 18px #0000005C;
+}
+.aboutus .row:nth-child(2){
+    position: relative;
+}
+.aboutus .row:nth-child(2)::before{
+    content: "1001 varieties";
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    font-size: 150px;
+    color: rgba(212, 158, 84, 0.08);
+    top: 90px;
+}
+.card-section {
+    margin: 8rem 0;
+}
+.title{
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #263855;
+    text-shadow: 0px 3px 3px #00000000;
+}
+.title::before{
+    content: "Buffect";
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    font-size: 190px;
+    color: rgba(212, 158, 84, 0.12);
+}
+.title.service::before{
+    content: "Services";
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    font-size: 190px;
+    color: rgba(212, 158, 84, 0.12);
+}
+.title.table::before{
+    content: "Kontakt";
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    font-size: 190px;
+    color: rgba(212, 158, 84, 0.12);
+}
+.title.coupon::before{
+    content: "Gutscheine";
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    font-size: 150px;
+    color: rgba(212, 158, 84, 0.12);
+}
+.card-section .col-md-6{
+    margin-top: 2rem;
+}
+.card-section .img-div{ position: relative;}
+.card-section .img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.card-section .img-div h5{
+    background: #65D445;
+    padding: 10px 15px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    color: white;
+    font-weight: normal;
+}
+.card-section .details{
+    width: 100%;
+    height: 400px;
+    background: #F8F8F8;
+    padding: 20px;
+}
+.card-section .details h5{
+    color: #1D1B1B;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-section .details p{
+    color: rgba(29, 27, 27, 0.5);
+    font-weight: 600;
+}
+.btn{
+    transition: 0.5s;
+    margin-top: 30px;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+.card-section .text{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.btn:hover{
+    box-shadow: none;
+}
+.services{
+    background: #F8F8F8;
+    padding: 70px 0 0 0;
+}
+.services .box{
+    margin: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.services .box img{
+    height: 60px;
+    margin-bottom: 30px;
+}
+.services .box h4, .services .box p{
+    color: #263855;
+}
+.services .links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.services .links img{
+    height: 40px;
+    margin: 5px 5px;
+}
+.coupons {
+    margin: 5rem 0;
+}
+.coupons h1{
+    margin: 3rem 0;
+}
+.coupons h5{
+    margin-top: 20px;
+    color: #263855;
+}
+.coupons p{
+    color: #263855;
+}
+.booking{
+    margin: 7rem 0 0 0;
+}
+.booking h2{
+    margin: 3rem 0;
+    font-weight: 700;
+}
+.booking .row{
+    background: #F8F8F8;
+}
+.booking img{
+    width: 100%;
+    /* height: 600px; */
+}
+.booking  .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.booking .box select{
+    padding: 10px 15px;
+    width: 60%;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.booking .box .option{
+    text-align: center !important;
+    cursor:  pointer !important;
+}
+.booking .home-btn{
+    width: 60%;
+    margin-top: 60px;
+}
+.home-btn:hover{
+    color: white;
+}
+.contact-form h2{
+    margin: 3rem 0;
+    font-weight: 700;
+}
+.contact-form .row{
+    width: 100%;
+    justify-content: space-between;
+    background: #131212;
+}
+.contact-form iframe{
+    width: 100%;
+    height: 100%;
+}
+.contact-form label{
+    color: white;
+    margin: 20px 0;
+}
+.contact-form form{
+    padding: 30px;
+}
+.contact-form input{
+    background: transparent;
+    padding: 20px;
+    border-radius: 0;
+        color: white;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+    background: transparent;
+    outline: none;
+}
+.contact-form textarea{
+    background: transparent;
+    color: white;
+}
+.contact-form form .row .div{
+    width: 48%;
+}
+.btn-light{
+    padding: 10px 35px;
+}
+.btn-light:hover{
+    color: black;
+}
+.title.reviewText::before{
+    content: "Reviews";
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    font-size: 150px;
+    color: rgba(212, 158, 84, 0.12);
+}
+.review{
+    margin:6rem 0;
+}
+.review .box{
+    box-shadow: 0px 3px 6px #014A1D2E;
+    border: 1px solid #B9E376;
+    margin: 30px 0;
+    padding: 10px 20px;
+}
+.review .client-name,
+.review .name{
+    display: flex;
+}
+.review .client-name{
+    justify-content: space-between;
+    border-bottom: 1px solid #B9E376;
+    margin-bottom: 15px;
+}
+.review .name div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6EB921;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+    text-decoration: uppercase;
+}
+.review .name h4,.review .client-name .date p{
+    color: #263855;
+    margin-top: 5px;
+}
+.review  .text{
+    display: flex;
+    padding:  0 25px; 
+}
+.review  .text i{
+    color: #6EB921;
+    margin-right: 10px;
+    font-size: 13px;
+}
+.review .text p span{
+    font-weight: 800;
+    color: #263855;
+}
+  .slider3 {
+    background: #65D445;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-weight: normal;
+    margin-top: 210px;
+    }
+.owl-dots{
+    display: flex;
+    justify-content: center;
+}
+.owl-dot{
+    width: 30px;
+    height: 10px;
+    background:#D9D9D9 !important;
+    border-radius: 9px;
+    margin: 0 5px;
+    outline: none;
+}
+.owl-dot.active{
+    background: #014A1D !important;
+}
+footer{
+    background-image: url("../images/footer-img.png");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0 0 0;
+    position: relative;
+}
+footer::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.88);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+footer .box{
+    z-index: 3;
+}
+footer h2{
+    color: #263855;
+    font-weight: bold;
+}
+footer a{
+    letter-spacing: 0.78px;
+    color: #1D1B1B;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+footer a:hover{
+     color: #1D1B1B;
+    opacity: 1; 
+}
+footer a i{
+    margin: 10px 5px; 
+}
+footer .links a{
+    color: #23221E !important;
+    opacity: 1; 
+    font-size: 30px;
+    margin: 25px 10px;
+}
+footer .links a:hover{
+    color: #014A1D !important;
+}
+footer p{
+    color: #263855;
+    margin-top: 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 780px){
+    html{overflow-x: hidden;}
+    .images{display: none;}
+    .header{position: unset;     background: rgba(0,0,0,0.7);}
+    .header .name{padding: 7px 0;}
+    .header .name h1{font-size: 2rem; text-align: center;}
+    nav{padding: 0.2rem 1rem !important;}
+    .navbar-light .navbar-toggler-icon{    background-color: white; padding: 11px; border-radius: 4px;}
+    .icons{position: absolute; top: 10px; right: 15px;}
+    .navbar-collapse{height: 80vh}
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    .nav-item {
+    margin: 20px 0px;
+    }
+    .carousel-item .box{ text-align: center;}
+    .aboutus .img1, .aboutus .img2{order: 2;}
+    .aboutus .img-box{margin: 40px 0}
+    .aboutus .row:nth-child(1){margin-top: 9rem}
+    .aboutus .row:nth-child(2){margin: 1rem 0}
+    .aboutus h1{font-size: 55px;}
+    .card-section {margin: 2rem 0;}
+    .card-section .col-md-6{padding-left: 5px !important; padding-right: 5px !important;}
+    .card-section .col-md-6 {margin-top: 0;}
+    .services .box{margin: 0}
+    .coupons{    margin: 3rem 0 0 0;}
+    .booking{margin : 2rem 0 0 0;}
+    .booking .box select, .booking .home-btn{width: 80%}
+    .booking .box{ padding: 20px 0;}
+    .contact-form .row{display: block}
+    .contact-form form .row .div{width: 100%;}
+    .review .box{padding: 10px}
+    .review .name div{width: 30px; height: 30px; font-size: 15px;}
+    .review .name h4, .review .client-name .date p{font-size:0.8rem}
+    .review .text{padding: 0;}
+    .aboutus .img-box .item img{
+    width: 100%;
+    height: auto;
+    }
+    
+    .slider3 {
+    background: #65D445;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-weight: normal;
+    margin-top: 320px;
+    }
+    .date-div {
+    width: 80% !important;
+    position: relative;
+    }
+}
+/*DatePicker*/
+.booking input {
+    padding: 10px 20px !important;
+    box-sizing: border-box;
+    background-color: white !important;
+    color: black !important;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 100%;
+    position: relative !important;
+}
+.date-div{
+    width: 60%;
+    position: relative;
+}
+.booking input{border: none;}
+.booking input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 0px solid #512DA8;
+    outline-width: 0
+}
+::placeholder {
+    color: black;
+    opacity: 1
+}
+:-ms-input-placeholder {
+    color: black
+}
+::-ms-input-placeholder {
+    color: black
+}
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+.datepicker {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: none;
+    padding: 10px !important;
+    position: absolute;
+    width: auto;
+}
+.datepicker-dropdown:after {
+    border-bottom: 6px solid #000
+}
+thead tr:nth-child(3) th {
+    color: #000 !important;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px
+}
+.dow,
+.old-day,
+.day,
+.new-day {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 0px !important
+}
+.old-day:hover,
+.day:hover,
+.new-day:hover,
+.month:hover,
+.year:hover,
+.decade:hover,
+.century:hover {
+    border-radius: 6px !important;
+    background-color: #ebce5b !important;
+    color: #000;
+}
+.datepicker .active {
+    border-radius: 6px !important;
+    background-image: null !important;
+    color: #000 !important
+}
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover{
+      background-image: unset !important;
+    background-color: #EBCE5B !important;
+    color: #000 !important
+}
+.disabled {
+    color: #616161 !important
+}
+.prev,
+.next,
+.datepicker-switch {
+    border-radius: 0 !important;
+    padding: 20px 10px !important;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000 !important;
+    opacity: 0.8
+}
+.prev:hover,
+.next:hover,
+.datepicker-switch:hover {
+    background-color: inherit !important;
+    opacity: 1
+}
+.cell {
+    border: 1px solid #BDBDBD;
+    margin: 2px;
+    cursor: pointer
+}
+.cell:hover {
+    border: 1px solid #3D5AFE
+}
+.cell.select {
+    background-color: #3D5AFE;
+    color: #fff
+}
+.fa-calendar {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    color: black;
+    font-size: 25px;
+    padding-top: 8px;
+    padding-left: 5px;
+    cursor: pointer
+}
