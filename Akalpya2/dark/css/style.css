@@ -1558,7 +1558,9 @@ img.mfp-img{
   margin-top: 1.25em;
   margin-bottom: 1.1em;
 }
-
+a:hover{
+  text-decoration: none;
+}
 .service-item p:last-child{
   margin-bottom: 0;
 }
