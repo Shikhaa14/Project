@@ -1551,7 +1551,10 @@ img.mfp-img{
   padding: 0 4.1em;
 }
 
-.service-item h4{
+.service-item h5{
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
   margin-top: 1.25em;
   margin-bottom: 1.1em;
 }
