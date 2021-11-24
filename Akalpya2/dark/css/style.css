@@ -681,7 +681,7 @@ label.error{
   z-index: 3;
   color: #fff;
   left: 45vmin;
-  top:5.9vmin;
+  top: 3.9vmin;
 }
 
  @media (max-width: 480px){
@@ -799,7 +799,8 @@ label.error{
   top:0;
   left:0;
   width: 100%;
-  padding:5.9vmin 0 0;
+  background-color: #2b2b2b;
+  padding: 2.9vmin 0 0;
 }
 
 .navbar-desctop .brand{
@@ -817,7 +818,7 @@ label.error{
   letter-spacing: 0.32em;
   text-transform: uppercase;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .navbar-desctop-menu li{
@@ -1177,7 +1178,6 @@ label.error{
   font-size: 18px;
   line-height: 1.7;
 }
-
 
 
 /* ------------------------------------------------------------------------------- */
@@ -1681,8 +1681,8 @@ a:hover{
   z-index: 1;
   left: 50%;
   bottom: 40px;
-  width: 12.4em;
-  margin-left: -6.2em;
+  width: 15.4em;
+  margin-left: -8em;
   padding: 1.1em 1.3em 3em;
   border:0;
   background-color: rgba(0,0,0,0.3);
@@ -1764,7 +1764,8 @@ a:hover{
 .col-address{
   font-size: 1.125em;
   line-height: 2.1;
-  margin-top: 2em;
+  /* margin-top: 2em; */
+  margin-top: 0em;
 }
 
 .form-submit{
