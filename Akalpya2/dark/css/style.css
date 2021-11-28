@@ -1830,10 +1830,12 @@ a:hover{
 
 
 
+
   html{
     font-size: 85%;
   }
 
+  
 
 
   /* Slider */
@@ -1971,6 +1973,7 @@ a:hover{
 
   /* Slider */
 
+  
 
 
   .arrow-left{
@@ -1988,3 +1991,15 @@ a:hover{
 }
 
 
+
+@media screen and (min-width: 320px) and (max-width: 780px) {
+
+  .col-about-title,
+  .col-about-info p,
+  .col-about-spec .service-item,
+  .col-service .service-item,
+  .experience-info{
+    text-align: center;
+  }
+  
+}
