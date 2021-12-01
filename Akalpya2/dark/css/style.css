@@ -753,9 +753,9 @@ label.error{
 }
 
 @media (max-height: 850px){
-  .vertical-panel-title{
+  /* .vertical-panel-title{
     display: none;
-  }
+  } */
 }
 
 .social-list{
