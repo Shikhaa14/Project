@@ -354,6 +354,9 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .content{
+  height: inherit;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -906,6 +909,9 @@ section {
   font-size: 14px;
   color: #728394;
 }
+.contact .info p a{
+  color: #728394;
+}
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;
 }
@@ -1047,4 +1053,16 @@ section {
 }
 #footer .credits {
   font-size: 13px;
+}
+
+.download-btn{
+  background-color: #0563bb; 
+  color: white;
+  border: none;
+}
+.download-btn:focus,
+.download-btn:focus-visible,
+.download-btn:active{
+  box-shadow: none;
+  border: none;
 }
