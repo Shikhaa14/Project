@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/RobotoMono-Medium.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "eina";
+  src: url(../fonts/Eina04-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "eina";
+  src: url(../fonts/Eina04-Bold.otf);
+  font-weight: 700;
+}

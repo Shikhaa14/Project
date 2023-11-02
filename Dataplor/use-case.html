@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dataplor</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/dataplor-fav.svg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <link rel="stylesheet" href="./assets/scss/responsive.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="sticky-top">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.svg" class="logo" alt="" />
+          </a>
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a href="product.html">Products</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a
+                    href=""
+                    class="dropdown-toggle"
+                    data-hover="dropdown"
+                    data-animations="fadeInDownNew "
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    >Solutions</a
+                  >
+                  <div class="dropdown-menu mega-menu dropdown-menu-end">
+                    <div class="wrapper">
+                      <div class="dropdown__triangle"></div>
+                      <div class="row m-0">
+                        <ul
+                          class="nav nav-pills mb-3"
+                          id="pills-tab"
+                          role="tablist"
+                        >
+                          <li class="nav-item" role="presentation">
+                            <button
+                              class="nav-link active"
+                              id="pills-home-tab"
+                              data-bs-toggle="pill"
+                              data-bs-target="#pills-home"
+                              type="button"
+                              role="tab"
+                              aria-controls="pills-home"
+                              aria-selected="true"
+                            >
+                              By Industry
+                            </button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button
+                              class="nav-link"
+                              id="pills-profile-tab"
+                              data-bs-toggle="pill"
+                              data-bs-target="#pills-profile"
+                              type="button"
+                              role="tab"
+                              aria-controls="pills-profile"
+                              aria-selected="false"
+                            >
+                              By Use Case
+                            </button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                          <div
+                            class="tab-pane fade show active"
+                            id="pills-home"
+                            role="tabpanel"
+                            aria-labelledby="pills-home-tab"
+                            tabindex="0"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <ul class="menu-list">
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Consumer Packaged Goods (CPGs)</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Mapping</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Third-Party Logistics</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6">
+                                <ul class="menu-list">
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Retail</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Quick Service Restaurants (QSRs)</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Fintech</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="pills-profile"
+                            role="tabpanel"
+                            aria-labelledby="pills-profile-tab"
+                            tabindex="0"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <ul class="menu-list">
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Increase Revenue</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Outpace Competitors</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Support Site Selection</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6">
+                                <ul class="menu-list">
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Enrich Data</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Support Investment Decisions</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Reach New Audiences</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a
+                    href="resource.html"
+                    class="dropdown-toggle"
+                    data-hover="dropdown1"
+                    data-animations="fadeInDownNew "
+                    data-bs-toggle="dropdown1"
+                    data-bs-auto-close="outside"
+                    >Resources</a
+                  >
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <div class="wrapper">
+                      <div class="dropdown__triangle"></div>
+                      <div class="row list-only">
+                        <div class="col-md-12">
+                          <ul class="menu-list">
+                            <li>
+                              <img src="assets/images/by-industy1.svg" alt="" />
+                              <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                              <img src="assets/images/by-industy1.svg" alt="" />
+                              <a>Blog</a>
+                            </li>
+                            <li>
+                              <img src="assets/images/by-industy1.svg" alt="" />
+                              <a>Press</a>
+                            </li>
+                            <li>
+                              <img src="assets/images/by-industy1.svg" alt="" />
+                              <a href="use-case.html">Case Studies</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="contact.html" class="contact-btn"
+                  ><span>Contact Us</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.svg" class="logo" alt="" />
+              </a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a
+                      href=""
+                      class="dropdown-toggle nav-link"
+                      data-hover="dropdown"
+                      data-animations="fadeInDownNew "
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
+                      >Solutions</a
+                    >
+                    <div class="dropdown-menu mega-menu dropdown-menu-end">
+                      <div class="wrapper">
+                        <div class="dropdown__triangle"></div>
+                        <div class="row m-0">
+                          <ul
+                            class="nav nav-pills mb-3"
+                            id="pills-tab"
+                            role="tablist"
+                          >
+                            <li class="nav-item" role="presentation">
+                              <button
+                                class="nav-link active"
+                                id="pills-home-tab1"
+                                data-bs-toggle="pill"
+                                data-bs-target="#pills-home1"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-home1"
+                                aria-selected="true"
+                              >
+                                By Industry
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button
+                                class="nav-link"
+                                id="pills-profile-tab1"
+                                data-bs-toggle="pill"
+                                data-bs-target="#pills-profile1"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-profile1"
+                                aria-selected="false"
+                              >
+                                By Use Case
+                              </button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                            <div
+                              class="tab-pane fade show active"
+                              id="pills-home1"
+                              role="tabpanel"
+                              aria-labelledby="pills-home-tab1"
+                              tabindex="0"
+                            >
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <ul class="menu-list">
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Consumer Packaged Goods (CPGs)</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Mapping</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Third-Party Logistics</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Retail</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Quick Service Restaurants (QSRs)</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Fintech</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="pills-profile1"
+                              role="tabpanel"
+                              aria-labelledby="pills-profile-tab1"
+                              tabindex="0"
+                            >
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <ul class="menu-list">
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Increase Revenue</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Outpace Competitors</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Support Site Selection</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Enrich Data</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Support Investment Decisions</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Reach New Audiences</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a
+                      href=""
+                      class="dropdown-toggle nav-link"
+                      data-hover="dropdown"
+                      data-animations="fadeInDownNew "
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
+                      >Resources</a
+                    >
+                    <div class="dropdown-menu dropdown-menu-end">
+                      <div class="wrapper">
+                        <div class="dropdown__triangle"></div>
+                        <div class="row list-only">
+                          <div class="col-md-12">
+                            <ul class="menu-list">
+                              <li>
+                                <img
+                                  src="assets/images/by-industy1.svg"
+                                  alt=""
+                                />
+                                <a>About Us</a>
+                              </li>
+                              <li>
+                                <img
+                                  src="assets/images/by-industy1.svg"
+                                  alt=""
+                                />
+                                <a>Blog</a>
+                              </li>
+                              <li>
+                                <img
+                                  src="assets/images/by-industy1.svg"
+                                  alt=""
+                                />
+                                <a>Press</a>
+                              </li>
+                              <li>
+                                <img
+                                  src="assets/images/by-industy1.svg"
+                                  alt=""
+                                />
+                                <a>Case Studies</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link contact-btn btn_primary"
+                    ><span>Contact Us</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section class="banner-section retail-banner use-case-banner">
+      <img
+        src="./assets/images/use-case-banner.png"
+        class="banner-video w-100 p-absolute"
+        alt=""
+      />
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-sm-12">
+            <div class="align-center text-center">
+              <div class="hero-content">
+                <h1 class="wow fadeInUp text-center">
+                  Location Intelligence to Support Data-Driven Site Selection
+                </h1>
+                <p class="wow fadeInUp delay1 animated">
+                  Leverage real-time location intelligence to confidently expand
+                  your brand, distribute products, and make informed decisions
+                  for store openings or closures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- leverage location section start -->
+    <section class="location-data">
+      <div class="container">
+        <div class="row align-center">
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <img
+              src="assets/images/leverage-location.png"
+              class="w-100 wow fadeIn"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6 offset-lg-1 col-md-6 col-sm-12 wow fadeInUp">
+            <h3>Leverage Location Data for Successful Business Expansion</h3>
+            <p>
+              Location intelligence data is key for site selection. dataplor's
+              POI data helps you identify areas that match your criteria for a
+              successful business location. The data includes detailed
+              information about neighboring businesses, foot traffic patterns,
+              and consumer sentiment. This helps you avoid costly investment
+              decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- leverage location section end -->
+
+    <!-- Comprehensive Site Selection Data section start -->
+    <section class="diverse-data Comprehensive-location Comprehensive-site">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10 section-header mb-5">
+            <h2 class="wow fadeInUp">Comprehensive Site Selection Data</h2>
+            <p>
+              dataplor excels in gathering and examining data to help
+              organizations increase growth, reach, visibility, and market
+              presence. Our POI and territory data extend beyond geospatial
+              analytics, incorporating qualitative KPIs such as Confidence and
+              Sentiment Scores on a global scale.
+            </p>
+          </div>
+          <div class="col-md-12">
+            <divv class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="single-data-card wow fadeIn">
+                  <div class="data-card-icon">
+                    <span>
+                      <img
+                        src="./assets/images/Comprehensive-site1.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div class="data-card-data">
+                    <h3>Predict Performance</h3>
+                    <p>
+                      You no longer have to rely on guesswork when making
+                      decisions about where to open new stores or services.
+                      dataplor's location intelligence provides real-time
+                      insights into an area's features and characteristics
+                      across the world. This data gives you the ability to
+                      better determine the best places to open a store or
+                      service, as well as when and how to do it.
+                    </p>
+                    <ul>
+                      <li>
+                        Accurately predict the potential performance of a new
+                        site by understanding footfall and visiting patterns.
+                      </li>
+                      <li>
+                        Access valuable insight into your target market in a
+                        specific region to better understand your opportunity
+                        size by analyzing neighboring businesses, customer
+                        sentiment, and more.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="single-data-card wow fadeIn">
+                  <div class="data-card-icon">
+                    <span>
+                      <img
+                        src="./assets/images/Comprehensive-site2.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div class="data-card-data">
+                    <h3>Develop Competitive Intelligence</h3>
+                    <p>
+                      Assess your performance in relation to competitors and
+                      local market conditions. By visualizing your locations
+                      relative to competitors, you can stay ahead by uncovering
+                      emerging trends and opportunities before they do. Analyze
+                      factors such as market share, customer sentiment, and foot
+                      traffic to better understand your competitors' strengths
+                      and weaknesses. Enabling you to make strategic decisions
+                      and adjustments and gain a competitive edge in the market.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="single-data-card wow fadeIn">
+                  <div class="data-card-icon">
+                    <span>
+                      <img
+                        src="./assets/images/Comprehensive-site3.svg"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div class="data-card-data">
+                    <h3>
+                      Identify Opportunities & Optimize Current Site Performance
+                    </h3>
+                    <p>
+                      dataplor's location data gives you a comprehensive view of
+                      an area’s features to inform your site selection and
+                      consolidation decisions. This helps to determine the best
+                      possible locations for new stores or services and identify
+                      potential areas for expansion and consolidation. By
+                      accessing accurate POI data, you are able to analyze
+                      information about existing and potential customers, the
+                      surrounding infrastructure, and other factors that may
+                      influence a company’s presence in a particular area.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </divv>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Comprehensive Site Selection Data section end -->
+
+    <!-- dataplor provides section  start-->
+    <section class="intelligence-area provides">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 section-header">
+            <h2 class="wow fadeInUp">
+              dataplor provides you with the tools you need for informed site
+              selection decisions.
+            </h2>
+          </div>
+          <div class="col-md-12 area-box">
+            <div class="row">
+              <div class="col">
+                <div class="single-area-card wow fadeInUp">
+                  <div class="img-box">
+                    <img src="./assets/images/provides1.svg" alt="" />
+                  </div>
+                  <h5>Global Places Data</h5>
+                </div>
+              </div>
+              <div class="col">
+                <div class="single-area-card wow fadeInUp delay1">
+                  <div class="img-box">
+                    <img src="./assets/images/provides2.svg" alt="" />
+                  </div>
+                  <h5>Location Intelligence Data</h5>
+                </div>
+              </div>
+              <div class="col">
+                <div class="single-area-card wow fadeInUp delay2">
+                  <div class="img-box">
+                    <img src="./assets/images/provides3.svg" alt="" />
+                  </div>
+                  <h5>Proprietary Metadata</h5>
+                </div>
+              </div>
+              <div class="col">
+                <div class="single-area-card wow fadeInUp delay3">
+                  <div class="img-box">
+                    <img src="./assets/images/provides4.svg" alt="" />
+                  </div>
+                  <h5>Brand Data</h5>
+                </div>
+              </div>
+              <div class="col">
+                <div class="single-area-card wow fadeInUp delay4">
+                  <div class="img-box">
+                    <img src="./assets/images/provides5.svg" alt="" />
+                  </div>
+                  <h5>Geometry Data</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 learn-more">
+              <p>
+                With access to dataplor's data, make informed decisions on which
+                locations will lead to the most success.
+              </p>
+              <a href="#">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- dataplor provides section end -->
+
+    <!-- accordion with img section -->
+    <section class="img-accordion location-data-matters py_90">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1 section-header mb-5">
+            <h2 class="wow fadeInUp">Opting for poor data can cost you $$$</h2>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div
+              class="accordion accordion-flush wow fadeInUp"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    <b>Avoid Risky Investments</b>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Ignoring local regulations, taxes, and utility costs can
+                    lead to underestimating overhead expenses, which can cause
+                    financial strain and adversely affect profitability.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    <b>Low Foot Traffic and Visibility</b>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Unlike our competitors, dataplor's data is updated 24/7 to
+                    ensure you have access to the most accurate location
+                    intelligence. Other "data providers" will sell you
+                    bulk-purchased and outdated location data, which could lead
+                    to millions of dollars in lost revenue and damages. But
+                    you'll find only real-time data with dataplor.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    <b>Missed Revenue Opportunities</b>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Human-reviewed POI data sets weed out errors and ensure
+                    accuracy by taking into account international differences in
+                    address structure, using language expertise to properly
+                    identify locations, and catching duplicates, errors, and
+                    inaccuracies, to maximize our client's success.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    <b>High Employee Turnover</b>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Human-reviewed POI data sets weed out errors and ensure
+                    accuracy by taking into account international differences in
+                    address structure, using language expertise to properly
+                    identify locations, and catching duplicates, errors, and
+                    inaccuracies, to maximize our client's success.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    <b>Limited Growth</b>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Human-reviewed POI data sets weed out errors and ensure
+                    accuracy by taking into account international differences in
+                    address structure, using language expertise to properly
+                    identify locations, and catching duplicates, errors, and
+                    inaccuracies, to maximize our client's success.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-2 col-md-6 p-4">
+            <img
+              src="./assets/images/option-for-poor-data.png"
+              class="w-100 wow fadeIn animate__slower"
+              alt=""
+            />
+          </div>
+          <div class="col-md-12">
+            <p class="wow fadeInUp delay1">
+              Location data is a valuable asset when looking to conduct site
+              selection and improve business strategies. By leveraging
+              dataplor's data, you can make better decisions, reduce costs, and
+              maximize ROI. With location intelligence data becoming
+              increasingly accessible and more powerful than ever before, it has
+              become an essential tool to grow and succeed.  With the right
+              analysis of POI data, you can get a better understanding of your
+              target market and make better decisions on where you should be
+              investing your resources. Ultimately, it’s all about making sure
+              that your business is in the right place at the right time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/wave-1.svg" class="top-right" alt="" />
+    </section>
+    <!-- accordion with img section end-->
+
+    <!-- CTA section starts -->
+    <section class="cta">
+      <div class="container">
+        <div class="row align-center">
+          <div class="col-lg-7 col-md-6 section-header">
+            <h2 class="text-white wow fadeInUp">
+              Don't settle for bad data. Upgrade your business intelligence with
+              dataplor.
+            </h2>
+            <p>
+              Our AI-powered solutions evaluate a distinct blend of business
+              details, geolocated data, online reviews, and consumer patterns
+              for any Point of Interest, brand, or region worldwide.
+            </p>
+          </div>
+          <div class="col-lg-5 col-md-6 d-flex justify-content-end gap-4">
+            <a href="#" class="btn_primary wow fadeInUp delay1"
+              ><span>Schedule a demo</span></a
+            >
+            <a href="" class="btn_secondary wow fadeInUp delay2"
+              ><span>Get in Touch</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/cta-bg.svg" class="cta-bg h-100" alt="" />
+    </section>
+    <!-- CTA section end -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 wow fadeInUp">
+            <img src="./assets/images/white-logo.svg" alt="" />
+          </div>
+          <div class="col-md-2 wow fadeInUp delay1">
+            <div class="quick-links">
+              <h2>About</h2>
+              <a href="">What We Do</a>
+              <a href="">Team</a>
+              <a href="">Trainings</a>
+              <a href="">Community</a>
+            </div>
+          </div>
+          <div class="col-md-2 wow fadeInUp delay2">
+            <div class="quick-links">
+              <h2>Quick Links</h2>
+              <a href="">Case Studies</a>
+              <a href="">Blogs</a>
+              <a href="">Resources</a>
+              <a href="">Product</a>
+            </div>
+          </div>
+          <div class="col-md-2 wow fadeInUp delay3">
+            <div class="quick-links contact-links">
+              <h2>Contact us</h2>
+              <a href="mailto:contact@dataplor.com"
+                ><i class="bi bi-envelope-fill"></i> contact@dataplor.com</a
+              >
+              <a href="tel:8446382886"
+                ><img src="./assets/images/call-icon.svg" alt="" /> (844)
+                638-2886</a
+              >
+              <a href=""
+                ><img src="./assets/images/location-icon.svg" alt="" /> 500 7th
+                Ave Suite 8A, New York, NY 10018</a
+              >
+            </div>
+          </div>
+          <div class="col-md-2 offset-md-1 wow fadeInUp delay4">
+            <div class="quick-links">
+              <h2>Newsletter</h2>
+              <div class="newsletter-box">
+                <input
+                  type="text"
+                  class="txt-box"
+                  placeholder="Email Address"
+                />
+                <button><img src="./assets/images/send.svg" alt="" /></button>
+              </div>
+              <div class="social-links">
+                <a href=""
+                  ><img src="./assets/images/linkedin.svg" alt="" /> Linkedin</a
+                >
+                <a href=""
+                  ><img src="./assets/images/twitter.svg" alt="" /> Twitter</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 wow fadeInUp delay2">
+            <div class="footer-credit">
+              <p>Copyright@2022-2023. dataplor</p>
+              <p>
+                <a href="">Privacy policy</a> |
+                <a href="">Terms & Conditions</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

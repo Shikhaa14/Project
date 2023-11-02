@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dataplor</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/dataplor-fav.svg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <link rel="stylesheet" href="./assets/scss/responsive.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="sticky-top">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.svg" class="logo" alt="" />
+          </a>
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a href="product.html">Products</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a
+                    href=""
+                    class="dropdown-toggle"
+                    data-hover="dropdown"
+                    data-animations="fadeInDownNew "
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    >Solutions</a
+                  >
+                  <div class="dropdown-menu mega-menu dropdown-menu-end">
+                    <div class="wrapper">
+                      <div class="dropdown__triangle"></div>
+                      <div class="row m-0">
+                        <ul
+                          class="nav nav-pills mb-3"
+                          id="pills-tab"
+                          role="tablist"
+                        >
+                          <li class="nav-item" role="presentation">
+                            <button
+                              class="nav-link active"
+                              id="pills-home-tab"
+                              data-bs-toggle="pill"
+                              data-bs-target="#pills-home"
+                              type="button"
+                              role="tab"
+                              aria-controls="pills-home"
+                              aria-selected="true"
+                            >
+                              By Industry
+                            </button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button
+                              class="nav-link"
+                              id="pills-profile-tab"
+                              data-bs-toggle="pill"
+                              data-bs-target="#pills-profile"
+                              type="button"
+                              role="tab"
+                              aria-controls="pills-profile"
+                              aria-selected="false"
+                            >
+                              By Use Case
+                            </button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                          <div
+                            class="tab-pane fade show active"
+                            id="pills-home"
+                            role="tabpanel"
+                            aria-labelledby="pills-home-tab"
+                            tabindex="0"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <ul class="menu-list">
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Consumer Packaged Goods (CPGs)</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Mapping</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Third-Party Logistics</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6">
+                                <ul class="menu-list">
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Retail</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Quick Service Restaurants (QSRs)</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Fintech</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="pills-profile"
+                            role="tabpanel"
+                            aria-labelledby="pills-profile-tab"
+                            tabindex="0"
+                          >
+                            <div class="row">
+                              <div class="col-md-6">
+                                <ul class="menu-list">
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Increase Revenue</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Outpace Competitors</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Support Site Selection</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6">
+                                <ul class="menu-list">
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Enrich Data</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Support Investment Decisions</a>
+                                  </li>
+                                  <li>
+                                    <img
+                                      src="assets/images/by-industy1.svg"
+                                      alt=""
+                                    />
+                                    <a>Reach New Audiences</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a
+                    href="resource.html"
+                    class="dropdown-toggle"
+                    data-hover="dropdown1"
+                    data-animations="fadeInDownNew "
+                    data-bs-toggle="dropdown1"
+                    data-bs-auto-close="outside"
+                    >Resources</a
+                  >
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <div class="wrapper">
+                      <div class="dropdown__triangle"></div>
+                      <div class="row list-only">
+                        <div class="col-md-12">
+                          <ul class="menu-list">
+                            <li>
+                              <img src="assets/images/by-industy1.svg" alt="" />
+                              <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                              <img src="assets/images/by-industy1.svg" alt="" />
+                              <a>Blog</a>
+                            </li>
+                            <li>
+                              <img src="assets/images/by-industy1.svg" alt="" />
+                              <a>Press</a>
+                            </li>
+                            <li>
+                              <img src="assets/images/by-industy1.svg" alt="" />
+                              <a href="use-case.html">Case Studies</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="contact.html" class="contact-btn"
+                  ><span>Contact Us</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.svg" class="logo" alt="" />
+              </a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a
+                      href=""
+                      class="dropdown-toggle nav-link"
+                      data-hover="dropdown"
+                      data-animations="fadeInDownNew "
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
+                      >Solutions</a
+                    >
+                    <div class="dropdown-menu mega-menu dropdown-menu-end">
+                      <div class="wrapper">
+                        <div class="dropdown__triangle"></div>
+                        <div class="row m-0">
+                          <ul
+                            class="nav nav-pills mb-3"
+                            id="pills-tab"
+                            role="tablist"
+                          >
+                            <li class="nav-item" role="presentation">
+                              <button
+                                class="nav-link active"
+                                id="pills-home-tab1"
+                                data-bs-toggle="pill"
+                                data-bs-target="#pills-home1"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-home1"
+                                aria-selected="true"
+                              >
+                                By Industry
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button
+                                class="nav-link"
+                                id="pills-profile-tab1"
+                                data-bs-toggle="pill"
+                                data-bs-target="#pills-profile1"
+                                type="button"
+                                role="tab"
+                                aria-controls="pills-profile1"
+                                aria-selected="false"
+                              >
+                                By Use Case
+                              </button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                            <div
+                              class="tab-pane fade show active"
+                              id="pills-home1"
+                              role="tabpanel"
+                              aria-labelledby="pills-home-tab1"
+                              tabindex="0"
+                            >
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <ul class="menu-list">
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Consumer Packaged Goods (CPGs)</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Mapping</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Third-Party Logistics</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Retail</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Quick Service Restaurants (QSRs)</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Fintech</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="tab-pane fade"
+                              id="pills-profile1"
+                              role="tabpanel"
+                              aria-labelledby="pills-profile-tab1"
+                              tabindex="0"
+                            >
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <ul class="menu-list">
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Increase Revenue</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Outpace Competitors</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Support Site Selection</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Enrich Data</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Support Investment Decisions</a>
+                                    </li>
+                                    <li>
+                                      <img
+                                        src="assets/images/by-industy1.svg"
+                                        alt=""
+                                      />
+                                      <a>Reach New Audiences</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <a
+                      href=""
+                      class="dropdown-toggle nav-link"
+                      data-hover="dropdown"
+                      data-animations="fadeInDownNew "
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
+                      >Resources</a
+                    >
+                    <div class="dropdown-menu dropdown-menu-end">
+                      <div class="wrapper">
+                        <div class="dropdown__triangle"></div>
+                        <div class="row list-only">
+                          <div class="col-md-12">
+                            <ul class="menu-list">
+                              <li>
+                                <img
+                                  src="assets/images/by-industy1.svg"
+                                  alt=""
+                                />
+                                <a>About Us</a>
+                              </li>
+                              <li>
+                                <img
+                                  src="assets/images/by-industy1.svg"
+                                  alt=""
+                                />
+                                <a>Blog</a>
+                              </li>
+                              <li>
+                                <img
+                                  src="assets/images/by-industy1.svg"
+                                  alt=""
+                                />
+                                <a>Press</a>
+                              </li>
+                              <li>
+                                <img
+                                  src="assets/images/by-industy1.svg"
+                                  alt=""
+                                />
+                                <a>Case Studies</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link contact-btn btn_primary"
+                    ><span>Contact Us</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section class="banner-section">
+      <video
+        src="./assets/videos/banner-video.mp4"
+        class="banner-video w-100 p-absolute"
+        autoplay
+        muted
+        loop
+      ></video>
+      <!-- <img src="./assets/images/hero-bg.png" class="" alt="" /> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="align-center">
+              <div class="hero-content">
+                <h1 class="wow fadeInUp">
+                  The Leading Provider of Global Location Intelligence
+                </h1>
+                <p class="wow fadeInUp delay1">
+                  Globally scaled, dynamically updated, and human reviewed for
+                  the most accurate and comprehensive point of interest data
+                  available.
+                </p>
+                <a href="" class="btn_primary wow fadeInUp delay2"
+                  ><span>Talk to an Expert</span>
+                </a>
+                <a href="" class="btn_secondary ml_25 wow fadeInUp delay2"
+                  ><span>Request Free Data Sample</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- client logo section start-->
+    <section class="clientle">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-11">
+            <h2 class="wow fadeInUp">
+              dataplor's location data is trusted by many of the world's largest
+              companies to run their business.
+            </h2>
+            <div
+              class="owl-carousel owl-theme client-carousel wow fadeInUp delay1"
+            >
+              <div class="item">
+                <img src="./assets/images/logo-1.svg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/logo-2.svg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/logo-3.svg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/logo-4.svg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/logo-5.svg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/logo-6.svg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/logo-7.svg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./assets/images/logo-8.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- client logo section end -->
+
+    <!-- intelligence area section  start-->
+    <section class="intelligence-area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 section-header">
+            <h2 class="wow fadeInUp">
+              Power Your Decisions with Globally Scaled Location Intelligence
+            </h2>
+            <p class="wow fadeInUp delay1">
+              Global market leaders rely on our comprehensive location
+              intelligence to grow strategically through sound data-driven
+              decisions even in the most data-scarce locations.
+            </p>
+          </div>
+          <div class="col-md-12 area-box">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="single-area-card wow fadeInUp">
+                  <div class="img-box">
+                    <img src="./assets/images/cpgs.svg" alt="" />
+                  </div>
+                  <h5>Consumer Packaged Goods (CPGs)</h5>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="single-area-card wow fadeInUp delay1">
+                  <div class="img-box">
+                    <img src="./assets/images/map.svg" alt="" />
+                  </div>
+                  <h5>Mapping</h5>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="single-area-card wow fadeInUp delay2">
+                  <div class="img-box">
+                    <img src="./assets/images/logistic.svg" alt="" />
+                  </div>
+                  <h5>Third-Party Logistics</h5>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="single-area-card wow fadeInUp delay3">
+                  <div class="img-box">
+                    <img src="./assets/images/retail.svg" alt="" />
+                  </div>
+                  <h5>Retail</h5>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="single-area-card wow fadeInUp delay4">
+                  <div class="img-box">
+                    <img src="./assets/images/qsrs.svg" alt="" />
+                  </div>
+                  <h5>Quick Service Restaurants (QSRs)</h5>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <div class="single-area-card wow fadeInUp delay5">
+                  <div class="img-box">
+                    <img src="./assets/images/fintech.svg" alt="" />
+                  </div>
+                  <h5>Fintech</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- intelligence area section end -->
+
+    <!-- Tab veiew start -->
+    <section class="usp-tabs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item wow fadeInUp" role="presentation"></li>
+              <li class="nav-item wow fadeInUp delay1" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#increase-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  Increase Revenue
+                </button>
+              </li>
+              <li class="nav-item wow fadeInUp delay1" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#outpace-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Outpace Competitors
+                </button>
+              </li>
+              <li class="nav-item wow fadeInUp delay2" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#support-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Support Site Selection
+                </button>
+              </li>
+              <li class="nav-item wow fadeInUp delay3" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#enrich-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Enrich Data
+                </button>
+              </li>
+              <li class="nav-item wow fadeInUp delay4" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#strengthen-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Strengthen Investment Decisions
+                </button>
+              </li>
+              <li class="nav-item wow fadeInUp delay5" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#enhance-tab"
+                  type="button"
+                  role="tab"
+                  aria-controls="enhance-tab"
+                  aria-selected="false"
+                >
+                  Enhance Advertising
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content wow fadeInUp delay1" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="increase-tab"
+                role="tabpanel"
+                aria-labelledby="increase-tab"
+                tabindex="0"
+              >
+                <div class="single-tab-box">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="align-center">
+                        <div>
+                          <h3>Increase Revenue</h3>
+                          <p>
+                            Determine regions with low product saturation and
+                            assess the potential for purchases based on foot
+                            traffic, competitor presence, and surrounding points
+                            of interest to pinpoint ideal locations for product
+                            expansion.
+                          </p>
+                          <a href="" class="btn-plain"
+                            >Learn more
+                            <img src="./assets/images/right-arrow.svg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                      <div class="tab-img-box">
+                        <span class="blue-block"></span>
+                        <img
+                          src="./assets/images/tab-img.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="outpace-tab"
+                role="tabpanel"
+                aria-labelledby="outpace-tab"
+                tabindex="0"
+              >
+                <div class="single-tab-box">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="align-center">
+                        <div>
+                          <h3>Outpace Competitors</h3>
+                          <p>
+                            Discover where your products and competitors are
+                            being sold globally in real-time, and map out the
+                            competitive landscape to stay ahead of evolving
+                            consumer demand.
+                          </p>
+                          <a href="" class="btn-plain"
+                            >Learn more
+                            <img src="./assets/images/right-arrow.svg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                      <div class="tab-img-box">
+                        <span class="blue-block"></span>
+                        <img
+                          src="./assets/images/tab-img.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="support-tab"
+                role="tabpanel"
+                aria-labelledby="support-tab"
+                tabindex="0"
+              >
+                <div class="single-tab-box">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="align-center">
+                        <div>
+                          <h3>Support Site Selection</h3>
+                          <p>
+                            Leverage places data to make informed decisions for
+                            opening and closing locations.
+                          </p>
+                          <a href="" class="btn-plain"
+                            >Learn more
+                            <img src="./assets/images/right-arrow.svg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                      <div class="tab-img-box">
+                        <span class="blue-block"></span>
+                        <img
+                          src="./assets/images/tab-img.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="enrich-tab"
+                role="tabpanel"
+                aria-labelledby="enrich-tab"
+                tabindex="0"
+              >
+                <div class="single-tab-box">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="align-center">
+                        <div>
+                          <h3>Enrich Data</h3>
+                          <p>
+                            Effortlessly merge dataplor's place attributes with
+                            your existing POI database, creating richer datasets
+                            and gaining a deeper understanding of both your
+                            customers and your business.
+                          </p>
+                          <a href="" class="btn-plain"
+                            >Learn more
+                            <img src="./assets/images/right-arrow.svg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                      <div class="tab-img-box">
+                        <span class="blue-block"></span>
+                        <img
+                          src="./assets/images/tab-img.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="enrich-tab"
+                role="tabpanel"
+                aria-labelledby="enrich-tab"
+                tabindex="0"
+              >
+                <div class="single-tab-box">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="align-center">
+                        <div>
+                          <h3>Fourth Tab Title</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                          </p>
+                          <a href="" class="btn-plain"
+                            >Learn more
+                            <img src="./assets/images/right-arrow.svg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                      <div class="tab-img-box">
+                        <span class="blue-block"></span>
+                        <img
+                          src="./assets/images/tab-img.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="strengthen-tab"
+                role="tabpanel"
+                aria-labelledby="strengthen-tab"
+                tabindex="0"
+              >
+                <div class="single-tab-box">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="align-center">
+                        <div>
+                          <h3>Strengthen Investment Decisions</h3>
+                          <p>
+                            Get crucial insights into local market trends,
+                            consumer behavior, business expansion, and
+                            contraction, as well as competitive landscapes to
+                            drive informed investment decisions.
+                          </p>
+                          <a href="" class="btn-plain"
+                            >Learn more
+                            <img src="./assets/images/right-arrow.svg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                      <div class="tab-img-box">
+                        <span class="blue-block"></span>
+                        <img
+                          src="./assets/images/tab-img.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="enhance-tab"
+                role="tabpanel"
+                aria-labelledby="enhance-tab"
+                tabindex="0"
+              >
+                <div class="single-tab-box">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="align-center">
+                        <div>
+                          <h3>Enhance Advertising</h3>
+                          <p>
+                            Utilize valuable location-based insights, to allow
+                            for more targeted marketing strategies and improved
+                            customer engagement.
+                          </p>
+                          <a href="" class="btn-plain"
+                            >Learn more
+                            <img src="./assets/images/right-arrow.svg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                      <div class="tab-img-box">
+                        <span class="blue-block"></span>
+                        <img
+                          src="./assets/images/tab-img.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-accordion">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Increase Revenue
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="col-md-12">
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="increase-tab"
+                      role="tabpanel"
+                      aria-labelledby="increase-tab"
+                      tabindex="0"
+                    >
+                      <div class="single-tab-box">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="tab-img-box">
+                              <span class="blue-block"></span>
+                              <img
+                                src="./assets/images/tab-img.png"
+                                class="w-100"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-5">
+                            <div class="align-center">
+                              <div>
+                                <p>
+                                  Determine regions with low product saturation
+                                  and assess the potential for purchases based
+                                  on foot traffic, competitor presence, and
+                                  surrounding points of interest to pinpoint
+                                  ideal locations for product expansion.
+                                </p>
+                                <a href="" class="btn-plain"
+                                  >Learn more
+                                  <img
+                                    src="./assets/images/right-arrow.svg"
+                                    alt=""
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                accrodion - 2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="col-md-12">
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="increase-tab"
+                      role="tabpanel"
+                      aria-labelledby="increase-tab"
+                      tabindex="0"
+                    >
+                      <div class="single-tab-box">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="tab-img-box">
+                              <span class="blue-block"></span>
+                              <img
+                                src="./assets/images/tab-img.png"
+                                class="w-100"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-5">
+                            <div class="align-center">
+                              <div>
+                                <p>
+                                  Determine regions with low product saturation
+                                  and assess the potential for purchases based
+                                  on foot traffic, competitor presence, and
+                                  surrounding points of interest to pinpoint
+                                  ideal locations for product expansion.
+                                </p>
+                                <a href="" class="btn-plain"
+                                  >Learn more
+                                  <img
+                                    src="./assets/images/right-arrow.svg"
+                                    alt=""
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tab veiew end -->
+
+    <!-- location data section start -->
+    <section class="loaction-data">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 section-header">
+            <h2 class="wow fadeInUp">
+              The Most Extensive Location Data Coverage Available
+            </h2>
+          </div>
+          <div class="col-md-12 counter-box" id="counter">
+            <div class="row justify-content-center">
+              <div class="col-md-4 col-6">
+                <div class="single-counter wow fadeInUp delay1">
+                  <img src="./assets/images/location.svg" alt="" />
+                  <p class="counter-amount">
+                    <span class="count percent" data-count="250"> 0 </span>
+                    <span>M+</span>
+                  </p>
+                  <p>Locations</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-6">
+                <div class="single-counter wow fadeInUp delay2">
+                  <img src="./assets/images/flag.svg" alt="" />
+                  <p class="counter-amount">
+                    <span class="count percent" data-count="200"> 0 </span>
+                    <span>+</span>
+                  </p>
+                  <p>Countries and Territories</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-6">
+                <div class="single-counter wow fadeInUp delay3">
+                  <img src="./assets/images/brand.svg" alt="" />
+                  <p class="counter-amount">
+                    <span class="count percent" data-count="15"> 0 </span>
+                    <span>K+</span>
+                  </p>
+                  <p>Brands</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <!-- <img
+              src="./assets/images/data-coverae.png"
+              class="w-100 wow fadeInUp"
+              alt=""
+            /> -->
+            <iframe
+              class="w-100"
+              height="360px"
+              src="https://clausa.app.carto.com/map/27a539f1-a5bd-4c04-8333-7048f4d0a34e"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- location data section end -->
+
+    <!-- content img sectoin start -->
+    <section class="img-content bg_primary py_90">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <div class="align-center">
+              <div>
+                <h2 class="wow fadeInUp">
+                  Unrivaled Data Coverage for Unmatched Insights
+                </h2>
+                <p class="wow fadeInUp delay1">
+                  dataplor's proprietary location data technology is supported
+                  by a unique combination of machine learning, advanced image
+                  recognition, artificial intelligence, large language models,
+                  and global human validators. These core components examine a
+                  wide range of business data, including geographically tagged
+                  information, online feedback, and consumer behaviors related
+                  to each and every location, brand, or region across the globe.
+                </p>
+                <p class="wow fadeInUp delay2">
+                  Our POI and territory data surpass traditional geospatial
+                  analytics by including advanced qualitative KPIs like
+                  Confidence and Sentiment Scores on a worldwide scale,
+                  providing clients with valuable insights for informed
+                  decision-making.
+                </p>
+                <a
+                  href="#"
+                  class="btn_primary mt-2 d-inline-block wow fadeInUp delay3"
+                  ><span>Learn How</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-2 col-md-6">
+            <img
+              src="./assets/images/data-coverage.png"
+              class="w-100 wow fadeIn animate__slower delay1"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content img sectoin end -->
+
+    <!-- accordion with img section -->
+    <section class="img-accordion bg_primary py_90 pt_0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="map-animation-box wow fadeIn animate__slower">
+              <img
+                src="./assets/images/map-with-pin.svg"
+                alt=""
+                class="w-100"
+              />
+              <img src="./assets/images/graph-1.svg" class="graph-1" alt="" />
+              <img src="./assets/images/graph-2.svg" class="graph-2" alt="" />
+              <img src="./assets/images/graph-3.svg" class="graph-3" alt="" />
+              <img src="./assets/images/graph-4.svg" class="graph-4" alt="" />
+              <img src="./assets/images/graph-5.svg" class="graph-5" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 col-md-6">
+            <div
+              class="accordion accordion-flush wow fadeInUp"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    <b>Globally Scaled </b> for Worldwide Insight
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    dataplor stands apart from regional or single-market POI
+                    providers providing access to comprehensive location
+                    intelligence on over 200 million locations across 200
+                    complete countries and territories, with a consistent schema
+                    in every country. This enables you to seamlessly leverage
+                    valuable location data to create actionable insights on a
+                    global scale.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    <b> Dynamically Updated </b> to Avoid Misleading Insights
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Unlike our competitors, dataplor's data is updated 24/7 to
+                    ensure you have access to the most accurate location
+                    intelligence. Other "data providers" will sell you
+                    bulk-purchased and outdated location data, which could lead
+                    to millions of dollars in lost revenue and damages. But
+                    you'll find only real-time data with dataplor.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    <b>Human Reviewed</b> for Accuracy You Can Trust
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Human-reviewed POI data sets weed out errors and ensure
+                    accuracy by taking into account international differences in
+                    address structure, using language expertise to properly
+                    identify locations, and catching duplicates, errors, and
+                    inaccuracies, to maximize our client's success.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA section starts -->
+    <section class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 section-header">
+            <h2 class="text-white wow fadeInUp">
+              Want to see how dataplor measures up?
+            </h2>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end gap-4">
+            <a href="#" class="btn_primary wow fadeInUp delay1"
+              ><span>Request Free Data Sample</span></a
+            >
+            <a href="" class="btn_secondary wow fadeInUp delay2"
+              ><span>Talk to an Expert</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/cta-bg.svg" class="cta-bg" alt="" />
+    </section>
+    <!-- CTA section end -->
+
+    <!-- case study section start -->
+    <section class="case-study">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1 section-header">
+            <h2 class="wow fadeInUp">
+              See It to Believe It: Discover Our Clients' Success!
+            </h2>
+            <p class="wow fadeInUp delay1">
+              Trust in the geographic data that serves as the backbone for
+              international business initiatives across hundreds of mid to
+              large-sized companies worldwide.
+            </p>
+            <a href="" class="btn-plain wow fadeInUp delay2"
+              >View all case studies
+              <img src="./assets/images/right-arrow.svg" alt=""
+            /></a>
+          </div>
+          <div class="col-md-12">
+            <div
+              class="owl-carousel owl-theme case-study-carousel wow fadeInUp delay1"
+            >
+              <div class="item">
+                <div class="single-case-study">
+                  <img
+                    src="./assets/images/cs-1-img.svg"
+                    class="w-100"
+                    alt=""
+                  />
+                  <h3>
+                    How Yeme Tech Created a 15-minute Walkable Fulfillment
+                    Benchmarking Tool
+                  </h3>
+                  <a href="#" class="btn-plain"
+                    >View case study
+                    <img src="./assets/images/right-arrow.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="single-case-study">
+                  <img
+                    src="https://assets.website-files.com/622643ca9ae58b7c8cbb04bc/649b25688c3b9d46e0b413d1_pexels-caio-64613.jpg"
+                    class="w-100"
+                    alt=""
+                  />
+                  <h3>
+                    How dataplor Transformed a Global Brand's Market Insights
+                  </h3>
+                  <a href="#" class="btn-plain"
+                    >View case study
+                    <img src="./assets/images/right-arrow.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="single-case-study">
+                  <img
+                    src="https://assets.website-files.com/622643ca9ae58b7c8cbb04bc/63cec06493edd4666b867c17_pexels-monstera-5849585.jpg"
+                    class="w-100"
+                    alt=""
+                  />
+                  <h3>
+                    Helping a Global CPG Brand Navigate Disruption and Grow
+                    Internationally
+                  </h3>
+                  <a href="#" class="btn-plain"
+                    >View case study
+                    <img src="./assets/images/right-arrow.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- case study section end -->
+
+    <!-- quote section start -->
+    <section class="quote">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="quote-box">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <p class="wow fadeInUp">
+                    Their expertise and resources allowed us to be able to
+                    create valuable metrics in order to gather valuable insights
+                    and make informed decisions based on accurate and up-to-date
+                    information. Their commitment to quality and support has
+                    been essential in ensuring the success of our data-driven
+                    proposition.
+                  </p>
+                  <div class="quote-author">
+                    <img
+                      src="./assets/images/quote-author.png"
+                      class="author wow fadeInUp delay1"
+                      alt=""
+                    />
+                    <h6 class="wow fadeInUp delay2">
+                      Alejandro Quinto, Yeme Tech
+                    </h6>
+                  </div>
+                  <img
+                    src="./assets/images/quote.svg"
+                    class="quote-icon"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- quote section end -->
+
+    <!-- Accurate Location Data Matters start -->
+    <section class="location-data-matters">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 section-header">
+            <h2 class="wow fadeInUp">
+              Don't Risk It: Accurate Location Data Matters
+            </h2>
+            <p class="wow fadeInUp delay1">
+              As the sole provider of real-time global intelligence, don't
+              compromise for a data provider with outdated, sparse data points.
+              Building your data foundation with inaccurate, out-of-date
+              information can expose your company to significant risk
+              potentially costing you millions in the process.
+            </p>
+          </div>
+          <div class="col-md-12 img-content">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <div class="align-center">
+                  <div>
+                    <h2 class="wow fadeInUp">
+                      The majority of global location data is riddled with
+                      inaccuracies, with error rates ranging from 70% to 90%.
+                      Resulting in:
+                    </h2>
+                    <ul class="wow fadeInUp delay1">
+                      <li>Thousands of hours wasted</li>
+                      <li>Lost revenue and growth</li>
+                      <li>Misleading insights and outcomes</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 offset-lg-1 col-md-6">
+                <div class="mobile-pc-box wow fadeIn animate__slower delay1">
+                  <img
+                    src="./assets/images/laptop.png"
+                    class="img-fluid mobile-pc"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/mobile-1.png"
+                    class="mobile-1"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/images/mobile-2.png"
+                    class="mobile-2"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 img-content">
+            <div class="row">
+              <div class="col-lg-5 offset-lg-1 col-md-6 order-md-2">
+                <div class="align-center">
+                  <div>
+                    <h2 class="wow fadeInUp">
+                      dataplor has developed an industry-leading QC process to
+                      deliver the most accurate data. This process ensures your
+                      business forecasts are always reliable.
+                    </h2>
+                    <ul class="wow fadeInUp delay1">
+                      <li>
+                        Proprietary system combines hundreds of sources and flag
+                        any potential errors
+                      </li>
+                      <li>
+                        In-house team of data scientists & analysts ro review
+                        data
+                      </li>
+                      <li>
+                        An international network of local data validators
+                        familiar with the region of interest and language
+                        proficiency
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 order-md-1">
+                <img
+                  src="./assets/images/macbook.png"
+                  class="w-100 wow fadeIn animate__slower delay1"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/wave-1.png" class="top-right" alt="" />
+      <img src="./assets/images/wave-2.png" class="bottom-left" alt="" />
+    </section>
+    <!-- Accurate Location Data Matters end -->
+
+    <!-- enrich system starts -->
+    <section class="enrich">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="wow fadeInUp">
+              Enrich the systems you're already using with accurate POI data.
+            </h2>
+          </div>
+          <div class="col-md-7">
+            <img
+              src="./assets/images/enrich.png"
+              class="w-100 wow fadeIn animate__slower"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- enrich system end -->
+
+    <!-- CTA section starts -->
+    <section class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 section-header">
+            <h2 class="text-white wow fadeInUp">Ready to get started?</h2>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end gap-4">
+            <a href="#" class="btn_primary wow fadeInUp delay1"
+              ><span>Schedule a demo</span></a
+            >
+            <a href="" class="btn_secondary wow fadeInUp delay2"
+              ><span>Get in Touch</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/cta-bg.svg" class="cta-bg" alt="" />
+    </section>
+    <!-- CTA section end -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 wow fadeInUp">
+            <img src="./assets/images/white-logo.svg" alt="" />
+          </div>
+          <div class="col-md-2 wow fadeInUp delay1">
+            <div class="quick-links">
+              <h2>About</h2>
+              <a href="">What We Do</a>
+              <a href="">Team</a>
+              <a href="">Trainings</a>
+              <a href="">Community</a>
+            </div>
+          </div>
+          <div class="col-md-2 wow fadeInUp delay2">
+            <div class="quick-links">
+              <h2>Quick Links</h2>
+              <a href="">Case Studies</a>
+              <a href="">Blogs</a>
+              <a href="">Resources</a>
+              <a href="">Product</a>
+            </div>
+          </div>
+          <div class="col-md-2 wow fadeInUp delay3">
+            <div class="quick-links contact-links">
+              <h2>Contact us</h2>
+              <a href="mailto:contact@dataplor.com"
+                ><i class="bi bi-envelope-fill"></i> contact@dataplor.com</a
+              >
+              <a href="tel:8446382886"
+                ><img src="./assets/images/call-icon.svg" alt="" /> (844)
+                638-2886</a
+              >
+              <a href=""
+                ><img src="./assets/images/location-icon.svg" alt="" /> 500 7th
+                Ave Suite 8A, New York, NY 10018</a
+              >
+            </div>
+          </div>
+          <div class="col-md-2 offset-md-1 wow fadeInUp delay4">
+            <div class="quick-links">
+              <h2>Newsletter</h2>
+              <div class="newsletter-box">
+                <input
+                  type="text"
+                  class="txt-box"
+                  placeholder="Email Address"
+                />
+                <button><img src="./assets/images/send.svg" alt="" /></button>
+              </div>
+              <div class="social-links">
+                <a href=""
+                  ><img src="./assets/images/linkedin.svg" alt="" /> Linkedin</a
+                >
+                <a href=""
+                  ><img src="./assets/images/twitter.svg" alt="" /> Twitter</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 wow fadeInUp delay2">
+            <div class="footer-credit">
+              <p>Copyright@2022-2023. dataplor</p>
+              <p>
+                <a href="">Privacy policy</a> |
+                <a href="">Terms & Conditions</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".dropdown").hover(
+          function () {
+            $(this)
+              .find(".dropdown-menu")
+              .stop(true, true)
+              .delay(200)
+              .fadeIn(200);
+          },
+          function () {
+            $(this)
+              .find(".dropdown-menu")
+              .stop(true, true)
+              .delay(200)
+              .fadeOut(200);
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

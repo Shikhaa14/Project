@@ -1,0 +1,88 @@
+@media screen and (min-width: 320px) and (max-width: 990px) {
+  .header_area {
+    background-color: transparent !important;
+  }
+  .nav-menu > li:hover > a,
+  .nav-menu > li.active > a,
+  .nav-menu > li.focus > a {
+    color: black !important;
+  }
+  /* .hero-banner{margin-top: 50px;} */
+  .navbar .navbar-brand img {
+    width: 60%;
+  }
+  .navbar .login h6 {
+    display: none !important;
+  }
+  .dark ul.main-nav > li > a {
+    color: black;
+  }
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+  .navbar-nav .navbar-brand {
+    order: 1;
+  }
+  .navbar-nav form {
+    order: 2;
+    margin-top: 10px;
+  }
+  .navbar-nav .cart-btn {
+    order: 3;
+    position: absolute !important;
+    bottom: 8px;
+    right: 32px;
+    z-index: 9;
+  }
+  .dark .ic.menu .line {
+    background: #18793f;
+  }
+  .main-nav {
+    background: #e8e3d8 !important;
+  }
+  .sub-menu-block .row,
+  .collection .row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 999;
+  }
+  .hero-banner .carousel-item h1,
+  .tie-section .box h1 {
+    font-size: 40px;
+  }
+  .types .wrapper,
+  .occasion .box {
+    margin-bottom: 20px;
+  }
+  .mailBox .shop-btn {
+    padding: 10px 20px;
+  }
+  .dark {
+    background-color: transparent !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: 0 !important;
+  }
+  .dark nav {
+    border: none !important;
+  }
+  .collection .box {
+    height: 400px;
+  }
+  .collection .box h4 {
+    font-size: 33px;
+  }
+  .dark ul.main-nav > li > a {
+    font-size: 20px !important;
+    color: black !important;
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 5000px) {
+}
