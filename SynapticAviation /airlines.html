@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synaptic Aviation</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/Favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="assets/css/cursor.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!----=========== Pre Loader start  =========== -->
+    <div class="txt pre-loader">
+      <div class="element-wrapper">
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="loading">Loading…</div>
+        <div class="large-square"></div>
+      </div>
+    </div>
+    <!-- <div class="loader" id="loader">
+      <div class="ap">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          width="48"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          color="#000"
+        >
+          <path
+            d="M22 16v-2l-8.5-5V3.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V9L2 14v2l8.5-2.5V19L8 20.5V22l4-1 4 1v-1.5L13.5 19v-5.5L22 16z"
+          />
+        </svg>
+      </div>
+
+      <div class="tr"></div>
+      <div class="bx"></div>
+    </div> -->
+    <!----=========== Pre Loader End  =========== -->
+
+    <!----=========== Navigation Menu Start ===========-->
+    <div class="main-wrapper">
+      <div class="menu">
+        <div class="navigation">
+          <img src="./assets/images/menu-bg.png" alt="" class="hexa-bg" />
+          <ul>
+            <li style="opacity: 0; transform: translate(0px, 0px)">
+              <a class="menu-links home" href="https://www.google.com/"
+                ><img src="./assets/images/logo.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li>
+                    <a href="solution-landing.html" class="dropdown-nav"
+                      >Solution</a
+                    >
+                    <div class="dropdown">
+                      <a href="airports.html">Airports</a>
+                      <a href="airlines.html">Airlines</a>
+                      <a href="ground-support.html">Ground Support</a>
+                      <a href="mro.html">MRO</a>
+                    </div>
+                  </li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="case-study.html">Case Studies</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+            </li>
+          </ul>
+          <p class="nav-copyright">© 2020 Lift Media All rights reserved.</p>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-box">
+            <p>
+              <img src="./assets/images/address-icon.svg" alt="" />
+              6705 SW, 57th Ave - Suite 700, Coral Gables, FL 33143, USA
+            </p>
+            <p>
+              <img src="./assets/images/mail-icon.svg" alt="" />
+              <a href="mailto:info@synapticaviation.com"
+                >info@synapticaviation.com</a
+              >
+            </p>
+            <p>
+              <img src="./assets/images/call-icon.svg" alt="" />
+              <a href="tel:18445054496">+1 - +1 844-505-4496</a>
+            </p>
+          </div>
+        </div>
+        <img
+          src="./assets/images/bg-lines.svg"
+          class="bg-img top-right"
+          alt=""
+        />
+      </div>
+
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="logo">
+                <a href="#">
+                  <img src="./assets/images/logo.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="nav-top-right">
+                <div class="side-nav-menu">
+                  <svg class="hamburger" viewBox="0 0 80 80">
+                    <line
+                      class="line01"
+                      x1="0"
+                      y1="3"
+                      x2="80"
+                      y2="3"
+                      data-svg-origin="0 3"
+                      transform="matrix(1,0,0,1,40,0)"
+                      style="transform-origin: 0px 0px"
+                    ></line>
+                    <line class="line02" x1="0" y1="40" x2="80" y2="40"></line>
+                    <line
+                      class="line03"
+                      x1="0"
+                      y1="77"
+                      x2="80"
+                      y2="77"
+                      data-svg-origin="0 77"
+                      transform="matrix(1,0,0,1,-40,0)"
+                      style="transform-origin: 0px 0px"
+                    ></line>
+                  </svg>
+                  <span class="close">Close</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!----=========== Navigation Menu End ===========-->
+
+    <!----=========== Aviation Intelligence section start ===========-->
+    <section class="about solution-landing">
+      <img
+        src="./assets/images/solution-landing-banner.svg"
+        alt=""
+        class="bg-img w-100"
+      />
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-center">
+          <div
+            class="col-lg-7 col-md-9 wow animate__animated animate__fadeInUp"
+          >
+            <h2>Eyes on the Tarmac</h2>
+            <p>
+              Elevate aviation data from stagnant, reflective information to
+              predictive intelligence that informs smart decisions days, weeks,
+              and even months ahead of an incident.
+            </p>
+            <a
+              href=""
+              class="primary_btn wow animate__ animate__fadeInUp delay4 animated"
+              style="visibility: visible; animation-name: fadeInUp"
+              >Schedule a Demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----=========== Aviation Intelligence section end ===========-->
+
+    <!----=========== Automate Manual section start  =========== -->
+    <section class="points solution mro">
+      <img src="assets/images/hexa-bg.svg" class="bg" alt="" />
+      <div class="container">
+        <div class="values limits actionable-data row">
+          <div class="col-md-12">
+            <h3 class="title wow animate__animated animate__fadeInUp">
+              <img src="assets/images/plane-vector.svg" class="left" alt="" />
+              From Data to Insights: The Power of Synaptic
+              <img src="assets/images/plane-vector.svg" class="right" alt="" />
+            </h3>
+            <p class="desc wow animate__animated animate__fadeInUp">
+              Improve operational efficiencies on arrival, during turnaround,
+              and while departing to help mitigate delays, increase safety, and
+              decrease engine and APU fuel burn (reducing CO2 footprint) with
+              Synaptic’s AI-powered aviation software.
+            </p>
+          </div>
+          <div class="col-md-12">
+            <div class="sliderContainer">
+              <div class="slider single-item">
+                <div>
+                  <div class="box wow animate__animated animate__fadeInUp">
+                    <h3>Lower Airline Operational Costs</h3>
+                    <p id="data0">
+                      Reduce costs associated with poor on-time performance,
+                      such as eliminating avoidable aircraft holds for gates
+                      that are not ready upon arrival, lowering fuel burn,
+                      decreasing unnecessary APU and jet engine use, and
+                      reducing CO2 emissions.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div class="box wow animate__animated animate__fadeInUp">
+                    <h3>Mitigate Airline Delays</h3>
+                    <p id="data1">
+                      Reduce costs associated with poor on-time performance,
+                      such as eliminating avoidable aircraft holds for gates
+                      that are not ready upon arrival, lowering fuel burn,
+                      decreasing unnecessary APU and jet engine use, and
+                      reducing CO2 emissions.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div class="box wow animate__animated animate__fadeInUp">
+                    <h3>Boost Airline Customer Service</h3>
+                    <p id="data2">
+                      Reduce costs associated with poor on-time performance,
+                      such as eliminating avoidable aircraft holds for gates
+                      that are not ready upon arrival, lowering fuel burn,
+                      decreasing unnecessary APU and jet engine use, and
+                      reducing CO2 emissions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="progressBarContainer wow animate__animated animate__fadeInUp delay3"
+              >
+                <div class="row">
+                  <div class="col-md-4 col-sm-12 pr-0">
+                    <div class="item">
+                      <span data-slick-index="0" class="progressBar"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12 pr-0">
+                    <div class="item">
+                      <span data-slick-index="1" class="progressBar"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12 pr-0">
+                    <div class="item">
+                      <span data-slick-index="2" class="progressBar"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----=========== Automate Manual section end  =========== -->
+
+    <!-- Trends section start  -->
+    <section class="fuel points solution trends ai pt-0">
+      <img src="assets/images/fuel-bg.jpg" class="fuel-bg" alt="" />
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-md-12">
+            <h3 class="title wow animate__animated animate__fadeInUp">
+              <img src="assets/images/plane-vector.svg" class="left" alt="" />
+              Uncover Deep Insights to Improve Performance
+              <img src="assets/images/plane-vector.svg" class="right" alt="" />
+            </h3>
+          </div>
+        </div>
+
+        <div class="row justify-content-center ai-platform m-0">
+          <div class="col-lg-10 col-md-12">
+            <div class="row m-0 left">
+              <div class="col-lg-3 col-md-0">
+                <div class="number-box wow animate__animated animate__fadeIn">
+                  <img
+                    src="assets/images/bg-shape-1-white.svg"
+                    class="bg"
+                    alt=""
+                  />
+                  <h1>01</h1>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-10">
+                <div class="details wow animate__animated animate__fadeInUp">
+                  <h2>Track Mission-Critical Data Points</h2>
+                  <p>
+                    From arrival to departure, Synaptic Aviation’s AI tracks
+                    operational data points such as average turn time, gate
+                    utilization, mandatory FOD prevention walks, GPU connection
+                    times, and jet bridge status with a log of timestamped
+                    events.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="img-wrapper">
+                  <img
+                    src="assets/images/AI-platform1.svg"
+                    class="wow animate__animated animate__fadeInUp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row m-0 right">
+              <div class="col-md-2">
+                <div class="img-wrapper">
+                  <img
+                    src="assets/images/AI-platform2.svg"
+                    class="wow animate__animated animate__fadeInUp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-10">
+                <div class="details wow animate__animated animate__fadeInUp">
+                  <h2>Stay Alert with Real-Time Notifications</h2>
+                  <p>
+                    Synaptic’s AI detects a range of events, such as obstacles
+                    in the safety envelope, the presence of guidemen, and
+                    service vehicle arrival and departure. Further, it provides
+                    ground service teams with real-time alerts if SLA deviations
+                    or procedure violations occur, empowering teams to respond
+                    immediately.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-0">
+                <div class="number-box wow animate__animated animate__fadeIn">
+                  <img
+                    src="assets/images/bg-shape-1-white.svg"
+                    class="bg"
+                    alt=""
+                  />
+                  <h1>02</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="row m-0 left">
+              <div class="col-lg-3 col-md-0">
+                <div class="number-box wow animate__animated animate__fadeIn">
+                  <img
+                    src="assets/images/bg-shape-1-white.svg"
+                    class="bg"
+                    alt=""
+                  />
+                  <h1>03</h1>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-10">
+                <div class="details wow animate__animated animate__fadeInUp">
+                  <h2>Analyze Performance. Uncover Opportunities.</h2>
+                  <p>
+                    Each real-time and historic data point collected through
+                    Synaptic’s computer vision technology enters a searchable
+                    database of high definition video. These data points can be
+                    used by your team to analyze and assess crew and vendor
+                    performance, reveal previously unseen patterns, and create
+                    new performance metrics based on real-time data. Synaptic
+                    Aviation helps you learn from trends to become predictive
+                    over time.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="img-wrapper">
+                  <img
+                    src="assets/images/AI-platform3.svg"
+                    class="wow animate__animated animate__fadeInUp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row m-0 right">
+              <div class="col-md-2">
+                <div class="img-wrapper">
+                  <img
+                    src="assets/images/AI-platform2.svg"
+                    class="wow animate__animated animate__fadeInUp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-10">
+                <div class="details wow animate__animated animate__fadeInUp">
+                  <h2>Improve Results with Better Insights</h2>
+                  <p>
+                    Learn from historic and live operational data for better
+                    resource allocation and decision-making, and leverage the
+                    video collateral for training and incident reviews to
+                    promote better future outcomes. The result? An elevated
+                    customer experience from seamless and failure-free
+                    operations.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-0">
+                <div class="number-box wow animate__animated animate__fadeIn">
+                  <img
+                    src="assets/images/bg-shape-1-white.svg"
+                    class="bg"
+                    alt=""
+                  />
+                  <h1>04</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row m-0 counter-row">
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div
+              class="single-counter wow animate__animated animate__zoomInDown"
+            >
+              <div class="progressbar" data-animate="false">
+                <div class="circle" data-percent="100">
+                  <div
+                    data-pre-counter=""
+                    data-show-count="19"
+                    data-post-counter="%"
+                  ></div>
+                  <span class="pre-counter"
+                    > Reduction of long taxi-in events
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div
+              class="single-counter wow animate__animated animate__zoomInDown delay2"
+            >
+              <div class="progressbar" data-animate="false">
+                <div class="circle" data-percent="100">
+                  <div
+                    data-pre-counter=""
+                    data-show-count="45"
+                    data-post-counter="%"
+                  ></div>
+                  <span class="pre-counter"
+                    >Reduction of arrival hold minutes</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div
+              class="single-counter wow animate__animated animate__zoomInDown delay3"
+            >
+              <div class="progressbar" data-animate="false">
+                <div class="circle" data-percent="100">
+                  <div
+                    data-pre-counter=""
+                    data-show-count="80"
+                    data-post-counter="%"
+                  ></div>
+                  <span class="pre-counter"
+                    >Reduction in delay time within the first 2 months of
+                    operation</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="assets/images/plane-bg.png" class="bg" alt="" />
+    </section>
+    <!-- Trends section end  -->
+
+    <!----=========== CTA Start  =========== -->
+    <section class="cta dots brain-svg">
+      <img src="assets/images/dots-bg.svg" class="bg-img dots-bg" alt="" />
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-lg-6 col-md-10 wow animate__animated animate__fadeInUp"
+          >
+            <h2 class="title mb-20 wow animate__animated animate__fadeInUp">
+              Learn How Synaptic Aviation Helps Airlines Around the Globe
+            </h2>
+            <a
+              href="#"
+              class="primary_btn dark wow animate__animated animate__fadeInUp delay2"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/brain-ai.svg" alt="" class="bg-img left" />
+      <img
+        src="./assets/images/brain-ai-flip.svg"
+        alt=""
+        class="bg-img right"
+      />
+    </section>
+    <!----=========== CTA Start  =========== -->
+
+    <!----=========== Footer Start  =========== -->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row footer_top">
+          <div class="footer_left_info col-lg-5 col-md-12 col-sm-12 col-12">
+            <div class="top_box info_box">
+              <div class="box_item phone">
+                <div class="icon_box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M17.3084 16.2751C17.3084 16.5751 17.2417 16.8834 17.1 17.1834C16.9584 17.4834 16.775 17.7667 16.5334 18.0334C16.125 18.4834 15.675 18.8084 15.1667 19.0167C14.6667 19.2251 14.125 19.3334 13.5417 19.3334C12.6917 19.3334 11.7834 19.1334 10.825 18.7251C9.86669 18.3167 8.90835 17.7667 7.95835 17.0751C7.00002 16.3751 6.09169 15.6001 5.22502 14.7417C4.36669 13.8751 3.59169 12.9667 2.90002 12.0167C2.21669 11.0667 1.66669 10.1167 1.26669 9.17508C0.866687 8.22508 0.666687 7.31675 0.666687 6.45008C0.666687 5.88341 0.766687 5.34175 0.966687 4.84175C1.16669 4.33341 1.48335 3.86675 1.92502 3.45008C2.45835 2.92508 3.04169 2.66675 3.65835 2.66675C3.89169 2.66675 4.12502 2.71675 4.33335 2.81675C4.55002 2.91675 4.74169 3.06675 4.89169 3.28341L6.82502 6.00842C6.97502 6.21675 7.08335 6.40841 7.15835 6.59175C7.23335 6.76675 7.27502 6.94175 7.27502 7.10008C7.27502 7.30008 7.21669 7.50008 7.10002 7.69175C6.99169 7.88341 6.83335 8.08341 6.63335 8.28341L6.00002 8.94175C5.90835 9.03341 5.86669 9.14175 5.86669 9.27508C5.86669 9.34175 5.87502 9.40008 5.89169 9.46675C5.91669 9.53341 5.94169 9.58341 5.95835 9.63341C6.10835 9.90841 6.36669 10.2667 6.73335 10.7001C7.10835 11.1334 7.50835 11.5751 7.94169 12.0167C8.39169 12.4584 8.82502 12.8667 9.26669 13.2417C9.70002 13.6084 10.0584 13.8584 10.3417 14.0084C10.3834 14.0251 10.4334 14.0501 10.4917 14.0751C10.5584 14.1001 10.625 14.1084 10.7 14.1084C10.8417 14.1084 10.95 14.0584 11.0417 13.9667L11.675 13.3417C11.8834 13.1334 12.0834 12.9751 12.275 12.8751C12.4667 12.7584 12.6584 12.7001 12.8667 12.7001C13.025 12.7001 13.1917 12.7334 13.375 12.8084C13.5584 12.8834 13.75 12.9917 13.9584 13.1334L16.7167 15.0917C16.9334 15.2417 17.0834 15.4167 17.175 15.6251C17.2584 15.8334 17.3084 16.0417 17.3084 16.2751Z"
+                      stroke="white"
+                      stroke-width="1.2"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M14.4167 8.50016C14.4167 8.00016 14.0251 7.2335 13.4417 6.6085C12.9084 6.0335 12.2001 5.5835 11.5001 5.5835"
+                      stroke="white"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17.3334 8.50008C17.3334 5.27508 14.7251 2.66675 11.5001 2.66675"
+                      stroke="white"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="content_box">
+                  <div class="small_content">Have a question?</div>
+                  <div class="box_item_content">+1 844-505-4496</div>
+                </div>
+              </div>
+              <div class="box_item mail">
+                <div class="icon_box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.1667 17.0834H5.83332C3.33332 17.0834 1.66666 15.8334 1.66666 12.9167V7.08342C1.66666 4.16675 3.33332 2.91675 5.83332 2.91675H14.1667C16.6667 2.91675 18.3333 4.16675 18.3333 7.08342V12.9167C18.3333 15.8334 16.6667 17.0834 14.1667 17.0834Z"
+                      stroke="white"
+                      stroke-width="1.2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.1667 7.5L11.5583 9.58333C10.7 10.2667 9.29167 10.2667 8.43334 9.58333L5.83334 7.5"
+                      stroke="white"
+                      stroke-width="1.2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="content_box">
+                  <div class="small_content">Contact us at</div>
+                  <div class="box_item_content">info@synapticaviation.com</div>
+                </div>
+              </div>
+            </div>
+            <div class="info_box">
+              <div class="box_item address">
+                <div class="icon_box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="26"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.1818 10.2143C18.1818 7.99783 17.3198 5.87216 15.7854 4.30489C14.251 2.73762 12.17 1.85714 10 1.85714C7.83005 1.85714 5.74897 2.73762 4.21458 4.30489C2.68019 5.87216 1.81818 7.99783 1.81818 10.2143C1.81818 13.6426 4.50364 18.1109 10 23.4631C15.4964 18.1109 18.1818 13.6426 18.1818 10.2143ZM10 26C3.33273 19.8101 0 14.547 0 10.2143C0 7.50529 1.05357 4.90725 2.92893 2.9917C4.8043 1.07615 7.34784 0 10 0C12.6522 0 15.1957 1.07615 17.0711 2.9917C18.9464 4.90725 20 7.50529 20 10.2143C20 14.547 16.6673 19.8101 10 26Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M10 13.2C10.7956 13.2 11.5587 12.9155 12.1213 12.4092C12.6839 11.9028 13 11.2161 13 10.5C13 9.78392 12.6839 9.09716 12.1213 8.59081C11.5587 8.08446 10.7956 7.8 10 7.8C9.20435 7.8 8.44129 8.08446 7.87868 8.59081C7.31607 9.09716 7 9.78392 7 10.5C7 11.2161 7.31607 11.9028 7.87868 12.4092C8.44129 12.9155 9.20435 13.2 10 13.2ZM10 15C8.67392 15 7.40215 14.5259 6.46447 13.682C5.52678 12.8381 5 11.6935 5 10.5C5 9.30653 5.52678 8.16193 6.46447 7.31802C7.40215 6.47411 8.67392 6 10 6C11.3261 6 12.5979 6.47411 13.5355 7.31802C14.4732 8.16193 15 9.30653 15 10.5C15 11.6935 14.4732 12.8381 13.5355 13.682C12.5979 14.5259 11.3261 15 10 15Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="content_box">
+                  <div class="small_content">Location</div>
+                  <div class="box_item_content">
+                    6705 SW, 57th Ave – Suite 700, Coral Gables, <br />
+                    FL 33143, USA
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_right_info col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="footer_right">
+              <div class="row">
+                <div class="col-12">
+                  <div class="footer_nav">
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">About Us</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Solutions</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Case Studies</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Blog</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Our Team</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="footer_form">
+                    <div class="form_title">
+                      <h6>Subscribe to our newsletter</h6>
+                    </div>
+                    <div class="subscribe_form">
+                      <form action="#" method="get">
+                        <div class="input_field">
+                          <input
+                            type="email"
+                            id="fname"
+                            placeholder="Enter your email"
+                            name="fname"
+                          />
+                        </div>
+                        <input type="submit" value="Submit" />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="linkedin_box">
+                    <a
+                      href="https://www.linkedin.com/company/synaptic-aviation/"
+                      target="_blank"
+                      ><img
+                        src="./assets/images/linkedIn.png"
+                        alt="linkedIn_img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="copy_right_text">© 2000-2021, All Rights Reserved</div>
+        </div>
+      </div>
+    </div>
+
+    <!----=========== Footer End  =========== -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/gsap-latest-beta.min.js?r=v3.11.3"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script
+      type="text/javascript"
+      src=".//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="assets/js/cursor.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
