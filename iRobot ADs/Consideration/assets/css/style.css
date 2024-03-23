@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    transition: 2s all;
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.imageBox2 #rirobot2 , .imageBox2 #rirobot2_320x50{
+    position: absolute;
+    left: unset;
+}
+.imageBox2 #lirobot2{
+    position: absolute;
+    right: unset;
+}
+/* 160x600 size  */
+.c160x600{
+    width: 160px;
+    height: 600px;
+}
+.c160x600 .imageBox{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 54%;
+}
+
+.c160x600 .imageBox img{
+    margin: 0 auto;
+    right: 0;
+}
+.c160x600 .logo img{
+    top: 10%;
+    left: 5px;
+}
+
+/* 300x250 size   */
+.c300x250{
+    width: 300px;
+    height: 250px;
+}
+.c300x250 .imageBox img{
+    position: absolute;
+    left: unset;
+    right: 3%;
+    bottom: 0%;
+    top: 31%;
+    margin: 0 auto;
+}
+
+.c300x250 .logo img{
+    top: 5%;
+    left: 14px;
+}
+
+/* 300x600 size   */
+.c300x600{
+    width: 300px;
+    height: 600px;
+}
+.c300x600 .imageBox img{
+    position: absolute;
+    left: unset;
+    right: 3%;
+    bottom: 0%;
+    top: 42%;
+    height: 210px;
+    margin: 0 auto;
+}
+.c300x600 .logo img{
+    top: 14%;
+    left: 14px;
+    height: 45px;
+}
+
+/* 320x50 size   */
+.c320x50{
+    width: 320px;
+    height: 50px;
+}
+.c320x50 .imageBox img{
+    position: absolute;
+    left: unset;
+    right: unset;
+    bottom: 0%;
+    top: 0%;
+    margin:  auto 0;
+    height: 45px;
+}
+.c320x50 .logo img{
+    top: 4%;
+    left: 7px;
+    height: 20px;
+}
+
+/* 728x90 size   */
+.c728x90{
+    width: 728px;
+    height: 90px;
+}
+.c728x90 .imageBox img{
+    position: absolute;
+    left: unset;
+    right: 30.5%;
+    bottom: 0%;
+    top: 0%;
+    height: 80px;
+    margin:  auto 0;
+}
+.c728x90 .logo img{
+    top: 3%;
+    left: 18px;
+    height: 37px;
+}

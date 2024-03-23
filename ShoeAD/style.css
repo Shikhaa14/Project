@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a , a:hover{
+    text-decoration: none;
+}
+.animation {
+    position: relative;
+}
+.animation .textImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.blink{
+    animation: blinkInfinite 1.3s;
+    animation-iteration-count: infinite;
+} 
+
+@keyframes blinkInfinite {
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+}
+
+/* size 120x600============ */
+.container120x600Shoes{
+    width: 120px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    text-align: center;
+    position: relative;
+}
+.container120x600Shoes .img img{
+    transform: translateX(-3px);
+}
+
+
+/* size 200x200============ */
+.container200x200Shoes{
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: #E8EBEB;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+.container200x200Shoes .img img{
+    float: right;
+}
+
+/* size 160x600============ */
+.container160x600Shoes{
+    width: 160px;
+    height: 600px;
+    display: flex;
+    background: #E8EBEB;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    text-align: center;
+    position: relative;
+}
+.container160x600Shoes .img img{
+    transform: translateX(-3px);
+}
+
+/* size 250x250============ */
+.container250x250Shoes{
+    width: 250px;
+    height: 250px;
+    background: #E8EBEB;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+}
+.container250x250Shoes .img img{
+    float: right;   
+}
+
+/* size 300x250============ */
+.container300x250Shoes{
+    width: 300px;
+    height: 250px;
+    background: #E8EBEB;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+}
+.container300x250Shoes .img img{
+    float: right;   
+}
+
+/* size 728x90 ================= */
+.container728x90Shoes{
+    width: 728px;
+    height: 90px;
+    background: #E8EBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+}
+.container728x90Shoes .img img{
+    float: right;   
+}
+.ShoeImg {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container728x90Shoes .shoeImg img{
+    transform: translateX(-12px);
+    text-align: center;
+}
+
+
+/* size 460x60 ================= */
+.container468x60Shoes{
+    width: 468px;
+    height: 60px;
+    background: #E8EBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+}
+.container468x60Shoes .img img{
+    float: right;   
+}
+.container468x60Shoes .shoeImg img{
+    transform: translateX(-12px);
+}
+
+/* size 336x280============ */
+.container336x280Shoes{
+    width: 336px;
+    height: 280px;
+    background: #E8EBEB;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+}
+.container336x280Shoes .img img{
+    float: right;   
+}
+
+/* size 970x90 ================= */
+.container970x90Shoes{
+    width: 970px;
+    height: 90px;
+    background: #E8EBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+}
+.container970x90Shoes .img img{
+    float: right;   
+}
+.container970x90Shoes .shoeImg img{
+    transform: translateX(-12px);
+}

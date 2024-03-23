@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #D91E26;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a , a:hover{
+    text-decoration: none;
+}
+
+/* animation ***********************************************************/
+
+@keyframes blink {
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+    100%{opacity: 1;}
+}
+
+@-webkit-keyframes blink {
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+    100%{opacity: 1;}
+}
+
+.blink{
+    animation: blink 1s;
+    animation-iteration-count: 3;
+} 
+
+@keyframes blinkInfinite {
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+}
+
+.blinkInfinite{
+    animation: blinkInfinite .3s;
+    animation-iteration-count: infinite;
+} 
+.slowBlink.blinkInfinite{
+    animation-duration: 1.3s;
+}
+
+/* size 120x600============ */
+.container120x600{
+    width: 120px;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    text-align: center;
+}
+.container120x600 .img img{
+    transform: translateX(-3px);
+}
+.container120x600 h1{
+    font-size: 29px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+.container120x600 span{
+    font-size: 45px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    line-height: 45px;
+    font-weight: bolder;
+}
+.container120x600 hr {
+    margin-top: 7px;
+    border-color: #D91E26 !important;
+}
+.container120x600 h2{
+    border-top: 3px solid #D91E26;
+    line-height: 25px;
+    padding-top: 15px;
+    letter-spacing: .70px;
+}
+
+/* 120x600 shoes ================== */
+/* size 250x250============ */
+.container250x250{
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+.container250x250 .img img{
+    float: right;
+}
+.container250x250 .box{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto;
+}
+.container250x250 .box div{
+    text-align: center;
+    display: flex ;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container250x250 h1{
+    font-size: 26px;
+    font-weight: 600;
+}
+.container250x250 span{
+    font-size: 26px;
+    font-weight: 600;
+}
+.container250x250 h2{
+    border-top: 3px solid #D91E26;
+    padding-top: 5px;
+    margin-top: 5px;
+    letter-spacing: .70px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* size 200x200============ */
+.container200x200{
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+.container200x200 .img img{
+    float: right;
+}
+.container200x200 .box{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto;
+}
+.container200x200 .box div{
+    text-align: center;
+    display: flex ;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container200x200 h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.container200x200 span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.container200x200 h2{
+    border-top: 3px solid #D91E26;
+    padding-top: 5px;
+    margin-top: 5px;
+    letter-spacing: .70px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+
+/* size 300x250============ */
+.container300x250{
+    width: 300px;
+    height: 250px;
+}
+.container300x250 .box{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto;
+}
+.container300x250 .box div{
+    text-align: center;
+    display: flex ;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+}
+.container300x250 h1{
+    font-size: 33px;
+    font-weight: 600;
+}
+.container300x250 span{
+    font-size: 33px;
+    font-weight: 600;
+}
+.container300x250 h2{
+    font-size: 29px;
+}
+
+/* size 480x60 ============ */
+.container468x60{
+    width: 480px;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container468x60 .box{
+    margin: unset;
+    height: 53px;
+    width: 295px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.container468x60 .box div{
+    width: 92%;
+    margin-left: 8px;    
+}
+.container468x60 h1 , .container468x60 span{
+    padding: 0;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+.container468x60 h2{
+    border: none;
+    padding-top: 0;
+    font-size: 14px;
+    margin-left: 5px;
+    line-height: unset;
+}
+
+/* size 970x90============== */
+.container970x90{
+    width: 970px;
+    height: 90px;
+}
+.container970x90 .box{
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+}
+.container970x90 h1 , .container970x90 span , .container970x90 h2{
+    line-height: unset;
+    font-size: 31px;
+    word-spacing: 3px;
+    margin-right: 11px;
+}
+
+
+/* size 336x280 ============ */
+.container336x280 .box{
+    height: 90px;
+}
+.container336x280{
+    width: 336px;
+    height: 280px;
+}
+.container336x280 h2{
+    padding-top: 3px;
+    font-size: 31px;
+}
+.container336x280 h1 , .container336x280 span{
+    font-size: 37px;
+}
+
+/* size 728x90============ */
+.container728x90{
+    width: 728px;
+    height: 90px;
+}
+.container728x90 .box{
+    width: 460px;
+}
+.container728x90 h1 , .container728x90 h2 , .container728x90 span{
+    font-size: 23px;
+    margin-left: 0;
+    word-spacing: unset;
+}
+.container728x90 h2{
+    margin-right: 0;
+}
+
+/* size 160x600============ */
+.container160x600{
+    width: 160px;
+    height: 600px;
+}
+.container160x600 h1{
+    padding-top: 30px;
+    font-size: 38px;
+}
+.container160x600 span{
+    font-size: 55px;
+    line-height: 60px;
+    padding-top: 8px;
+}
+.container160x600 h2{
+    line-height: 33px;
+    padding-top: 15px;
+    font-size: 33px;
+}

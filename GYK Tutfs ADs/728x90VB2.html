@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <meta name="ad.size" content="width=728,height=90">
+    
+    <title>Tufts Primary Care - 2022 - 300x250</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container container728x90 animate1 text-animation" id="main">
+        <div class="image-wrapper green-bg">
+            <img src="images/sizes/Primary-Care_728x90VB.jpg" class="image" />
+        </div>
+        <div class="pulse-wrapper green-bg">
+            <h1 class="h1" id="h1">
+                Adult primary care<br> within reach
+            </h1>
+
+            <img src="images/Layers-Full Circle/green-1.png" id="test1" class="one" alt="one">
+            <img src="images/Layers-Full Circle/green-2.png" id="test2" class="two" alt="two">
+            <img src="images/Layers-Full Circle/green-3.png" id="test3" class="three" alt="three">
+            <img src="images/Layers-Full Circle/green-4.png" id="test4" class="four" alt="four">
+        </div>
+
+        <div class="CTAtext">
+            <img class="CTAImage-animation" src="images/logo.png" alt="logo">
+            <div class="CTAtext-animation" id="CTAtext-animation">
+                <h1>
+                    Request an
+                    appointment
+                </h1>
+                <a href="#" class="green">Book now</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        setTimeout(function() {    
+            document.getElementById('main').style.opacity= 0
+            document.getElementById('main').style.transition= 'all 2s ease'
+            document.getElementById('main').classList.toggle("animate1");
+            
+            document.getElementById('test1').style.transform = "translate(51%, -52%) scale(.8)";
+            document.getElementById('test2').style.transform = "translate(53%, -55%) scale(.9)";
+            document.getElementById('test3').style.transform = "translate(49%, -54%) scale(0.75)";
+            document.getElementById('test4').style.transform = "translate(0) scale(1.6)";
+            document.getElementById('h1').style.opacity= 0;
+            document.getElementById('CTAtext-animation').style.transform = "translateX(-10px)";
+            
+        }, 13000);
+
+        setTimeout(function() {    
+            document.getElementById('main').style.opacity= 1
+            document.getElementById('main').style.transition= 'all 2s ease'
+            document.getElementById('main').classList.toggle("animate1");
+        }, 13300);
+    </script>
+</body>
+</html>

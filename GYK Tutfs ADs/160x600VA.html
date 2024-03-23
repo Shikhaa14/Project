@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <meta name="ad.size" content="width=160,height=600">
+    
+    <title>Tufts Primary Care - 2022 - 160x600</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container container160x600 animate" id="main" style="background-image: url('images/sizes/Primary-Care_160x600VA.jpg');">
+        <h1 class="h1">
+            Adult primary care within reach
+        </h1>
+
+        <img src="images/Layers-Full Circle/Blue-1.png" id="test1_160x600" class="one" alt="one">
+        <img src="images/Layers-Full Circle/Blue-2.png" id="test2_160x600" class="two" alt="two">
+        <img src="images/Layers-Full Circle/Blue-3.png" id="test3_160x600" class="three" alt="three">
+        <img src="images/Layers-Full Circle/Blue-4.png" id="test4_160x600" class="four" alt="four">
+
+        <div class="CTAtext">
+            <img class="CTAImage-animation" src="images/logo.png" alt="logo">
+            <div class="CTAtext-animation">
+                <h1>
+                    Request an<br>
+                    appointment
+                </h1>
+                <a href="#" class="blue">Book now</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {    
+            console.log("Called")
+            document.getElementById('main').style.opacity= 0
+            document.getElementById('main').style.transition= 'all 2s ease'
+            document.getElementById('main').classList.toggle("animate");
+            
+            document.getElementById('test1_160x600').style.transform = "translate(50%, -50%) scale(2.7)";
+            document.getElementById('test2_160x600').style.transform = "translate(50%, -50%) scale(2.8)";
+            document.getElementById('test3_160x600').style.transform = "translate(50%, -50%) scale(2.9)";
+            document.getElementById('test4_160x600').style.transform = "translate(0) scale(6.6)";
+        }, 14000);
+
+        setTimeout(function() {    
+            document.getElementById('main').style.opacity= 1
+            document.getElementById('main').style.transition= 'all 2s ease'
+            document.getElementById('main').classList.toggle("animate");
+        }, 14300);
+    </script>
+
+</body>
+</html>

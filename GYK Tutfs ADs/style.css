@@ -1,0 +1,997 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Produkt-Regular;
+    src: url('./fonts/Produkt-Regular.otf');
+}
+
+@font-face {
+    font-family: Graphik-Semibold;
+    src: url('./fonts/GraphikMedium.otf');
+}
+
+.purple{color: #49096F;}
+.orange{ color: #DB2A1D; }
+.blue{ color: #012F8B; }
+.green{ color: #2E9C46; }
+
+.purple-bg{background-color: #49096F;}
+.orange-bg{ background-color: #DB2A1D; }
+.blue-bg{ background-color: #012F8B; }
+.green-bg{ background-color: #2E9C46; }
+
+.container{
+    width: 300px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    z-index: 8;
+    overflow: hidden;
+    position: relative;
+}
+
+.animate.container , 
+.animate1.container,
+.container320x50 .image{
+    animation: imageAnimation 2s;
+}
+
+@keyframes imageAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.h1,
+h1
+.container320x50 .h1{
+    font-family: Produkt-Regular;
+    color: white;
+    font-size: 30px;
+    padding: 7px 10px;
+    font-weight: 100;
+    line-height: 32px;
+}
+.animate .h1{
+    animation: textAnimationBottom 1s;
+    animation-fill-mode: both;
+    animation-delay: 1.25s;
+}
+
+@keyframes textAnimationBottom {
+    from {
+        opacity: 0;
+        transform: translate(-5%,5%);
+    }
+    to { opacity: 1 }
+}
+
+.one, .two, .three, .four{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.CTAtext{
+    width: 100%;
+    height: 100%;
+    font-family: Produkt-Regular;
+    color: white;
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    padding: 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.animate .CTAtext{
+    animation: textAnimationTop 1s;
+    animation-fill-mode: both;
+    animation-delay: 6.75s;
+}
+@keyframes textAnimationTop {
+    from {
+        opacity: 0;
+        transform: translate(-5%,5%);
+    }
+    to { opacity: 1 }
+}
+
+.CTAtext img{
+    width: 75%;
+}
+
+.CTAtext h1{
+    font-weight: 100;
+    margin-bottom: 15px;
+    line-height: 30px;
+    font-size: 26px;
+}
+
+.CTAtext a{
+    background: white;
+    border-radius: 100px;
+    padding: 6px 18px;
+    text-decoration: none;
+    font-family: Graphik-Semibold;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.animate .CTAImage-animation{
+    animation: textAnimationTop 1.125s;
+    animation-fill-mode: both;
+    animation-delay: 7.75s;
+}
+
+
+
+/* 300x250 ----------------------------------- */
+.container300x250{
+    width: 300px;
+    height: 250px;
+}
+.container300x250 .one{
+    z-index: 9;
+    transform: translate(150%, -150%) scale(1.6);
+}
+.container300x250.animate .one{
+    animation: pulse1 2s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+@keyframes pulse1 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(50%, -50%) scale(1.8);
+    }
+    100%{
+        transform: translate(50%, -50%) scale(1.6);
+    }
+}
+
+.container300x250 .two{
+    z-index: 8;
+    transform: translate(150%, -150%) scale(1.6);
+}
+.container300x250.animate .two{
+    animation: pulse2 2.2s;
+    animation-delay: 4.1s;
+    animation-fill-mode: both;
+}
+@keyframes pulse2 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(50%, -50%) scale(1.9);
+    }
+    100%{
+        transform: translate(50%, -50%) scale(1.6);
+    }
+}
+
+.container300x250 .three{
+    z-index: 7;
+    transform: translate(150%, -150%) scale(1.6);
+}
+.container300x250.animate .three{
+    animation: pulse3 2.4s;
+    animation-delay: 4.2s;
+    animation-fill-mode: both;
+}
+@keyframes pulse3 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(50%, -50%) scale(1.9);
+    }
+    100%{
+        transform: translate(50%, -50%) scale(1.6);
+    }
+}
+
+.container300x250 .four{
+    z-index: 6;
+    transform: scale(1.6) translate(150%, -150%);
+}
+.container300x250.animate .four{
+    animation: pulse4 2s;
+    animation-delay: 4.3s;
+    animation-fill-mode: both;
+}
+@keyframes pulse4 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    100%{
+        transform: translate(0%, 0%) scale(1.6);
+    }
+}
+
+
+/* 160x600 ----------------------------------- */
+.container160x600{
+    width: 160px;
+    height: 600px;
+}
+.container160x600 h1{
+    font-size: 33px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+.container160x600 .one{
+    z-index: 9;
+    transform: translate(150%, -150%) scale(2.7);
+}
+.container160x600.animate .one{
+    animation: pulse1-160x600 2s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+@keyframes pulse1-160x600 {
+    0%{
+        transform: translate(150%, -150%) scale(2.7);
+    }
+    50%{
+        transform: translate(50%, -50%) scale(2.9);
+    }
+    100%{
+        transform: translate(50%, -50%) scale(2.7);
+    }
+}
+
+.container160x600 .two{
+    z-index: 8;
+    transform: translate(150%, -150%) scale(2.8);
+}
+.container160x600.animate .two{
+    animation: pulse2-160x600 2.2s;
+    animation-delay: 4.1s;
+    animation-fill-mode: both;
+}
+@keyframes pulse2-160x600 {
+    0%{
+        transform: translate(150%, -150%) scale(2.8);
+    }
+    50%{
+        transform: translate(50%, -50%) scale(3);
+    }
+    100%{
+        transform: translate(50%, -50%) scale(2.8);
+    }
+}
+
+.container160x600 .three{
+    z-index: 7;
+    transform: translate(150%, -150%) scale(2.9);
+}
+.container160x600.animate .three{
+    animation: pulse3-160x600 2.3s;
+    animation-delay: 4.2s;
+    animation-fill-mode: both;
+}
+@keyframes pulse3-160x600 {
+    0%{
+        transform: translate(150%, -150%) scale(2.9);
+    }
+    50%{
+        transform: translate(50%, -50%) scale(3.2);
+    }
+    100%{
+        transform: translate(50%, -50%) scale(2.9);
+    }
+}
+.container160x600 .four{
+    z-index: 6;
+    transform: scale(6.6) translate(300%, -300%);
+}
+.container160x600.animate .four{
+    animation: pulse4-160x600 2s;
+    animation-delay: 4.3s;
+    animation-fill-mode: both;
+}
+@keyframes pulse4-160x600 {
+    0%{
+        transform: translate(300%, -300%) scale(6.6);
+    }
+    100%{
+        transform: translate(0%, 0%) scale(6.6);
+    }
+}
+.container160x600 .CTAtext {
+    width: 100%;
+    height: 300px;
+    margin-top: 75%;
+    font-family: Produkt-Regular;
+    color: white;
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    padding: 20px 5px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container160x600 .CTAtext img {
+    width: 130%;
+}
+.container160x600 .CTAtext h1 {
+    font-weight: 100;
+    margin-bottom: 15px;
+    line-height: 27px;
+    font-size: 23px;
+}
+.container160x600 .CTAtext a{
+    font-size: 15px;
+}
+
+
+/* 320x480 ------------------------------------ */
+.container320x480{
+    width: 320px;
+    height: 480px;
+}
+.container320x480 .h1{
+    font-size: 37px;
+    line-height: 46px;
+    padding: 15px;
+}
+.container320x480 .one{
+    z-index: 9;
+    transform: translate(100%, -100%) scale(2.7);
+}
+.container320x480.animate .one{
+    animation: pulse1-320x480 2s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+@keyframes pulse1-320x480 {
+    0%{
+        transform: translate(100%, -100%) scale(2.7);
+    }
+    50%{
+        transform: translate(53%, -53%) scale(2.9);
+    }
+    100%{
+        transform: translate(53%, -53%) scale(2.7);
+    }
+}
+
+.container320x480 .two{
+    z-index: 8;
+    transform: translate(100%, -100%) scale(2.8);
+}
+.container320x480.animate .two{
+    animation: pulse2-320x480 2.2s;
+    animation-delay: 4.1s;
+    animation-fill-mode: both;
+}
+@keyframes pulse2-320x480 {
+    0%{
+        transform: translate(100%, -100%) scale(2.8);
+    }
+    50%{
+        transform: translate(59%, -59%) scale(3);
+    }
+    100%{
+        transform: translate(59%, -59%) scale(2.8);
+    }
+}
+
+.container320x480 .three{
+    z-index: 7;
+    transform: translate(150%, -150%) scale(2.9);
+}
+.container320x480.animate .three{
+    animation: pulse3-320x480 2.3s;
+    animation-delay: 4.2s;
+    animation-fill-mode: both;
+}
+@keyframes pulse3-320x480 {
+    0%{
+        transform: translate(150%, -150%) scale(2.9);
+    }
+    50%{
+        transform: translate(64%, -67%) scale(3.2);
+    }
+    100%{
+        transform: translate(64%, -67%) scale(2.9);
+    }
+}
+
+.container320x480 .four{
+    z-index: 6;
+    transform: scale(6.6) translate(300%, -300%);
+}
+.container320x480.animate .four{
+    animation: pulse4-320x480 2s;
+    animation-delay: 4.3s;
+    animation-fill-mode: both;
+}
+@keyframes pulse4-320x480 {
+    0%{
+        transform: translate(300%, -300%) scale(6.6);
+    }
+    100%{
+        transform: translate(0%, 0%) scale(6.6);
+    }
+}
+.container320x480 .CTAtext {
+    width: 100%;
+    height: 350px;
+    font-family: Produkt-Regular;
+    color: white;
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    padding: 20px 9px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.container320x480 .CTAtext img {
+    width: 76%;
+}
+.container320x480 .CTAtext h1 {
+    font-size: 34px;
+    margin-bottom: 23px;
+    line-height: 46px;
+}
+.container320x480 .CTAtext a{
+    font-size: 18px;
+}
+
+
+/* 320x50 ------------------------------------ */
+.container320x50{
+    width: 320px;
+    height: 50px;
+}
+.container320x50 .image-wrapper{
+    width: 40%;
+    height: 100%;
+}
+.container320x50 .image-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.container320x50 .pulse-wrapper{
+    width: 60%;
+    height: 100%;
+}
+
+.container320x50 .one{
+    z-index: 9;
+    transform: translate(150%, -150%) scale(1.6);
+}
+
+.container320x50.animate1 .one{
+    animation: pulse1-320x50 2s;
+    animation-delay: 1.25s;
+    animation-fill-mode: both;
+}
+@keyframes pulse1-320x50 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(50%, -51%) scale(0.9);
+    }
+    100%{
+        transform: translate(50%, -51%) scale(0.8);
+    }
+}
+
+.container320x50 .two{
+    z-index: 8;
+    transform: translate(150%, -150%) scale(1.6);
+}
+.container320x50.animate1 .two{
+    animation: pulse2-320x50 2.2s;
+    animation-delay: 1.35s;
+    animation-fill-mode: both;
+}
+@keyframes pulse2-320x50 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(49%, -52%) scale(0.8);
+    }
+    100%{
+        transform: translate(49%, -52%) scale(0.7);
+    }
+}
+
+.container320x50 .three{
+    z-index: 7;
+    transform: translate(150%, -150%) scale(1.6);
+}
+.container320x50.container320x50.animate1 .three{
+    animation: pulse3-320x50 2.4s;
+    animation-delay: 1.45s;
+    animation-fill-mode: both;
+}
+@keyframes pulse3-320x50 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(48%, -54%) scale(0.8);
+    }
+    100%{
+        transform: translate(48%, -54%) scale(0.7);
+    }
+}
+
+.container320x50 .four{
+    z-index: 6;
+    transform: scale(1.6) translate(150%, -150%);
+}
+.container320x50.animate1 .four{
+    animation: pulse4-320x50 2s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+@keyframes pulse4-320x50 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    100%{
+        transform: translate(0%, 0%) scale(1.6);
+    }
+}
+
+.container320x50 h1{
+    font-size: 15px !important;
+    line-height: 18px !important;
+    z-index: 9999;
+    position: relative;
+    transition: 1s all;
+}
+
+.container320x50.animate1 .h1{
+    animation: textAnimationBottom-320x50 5s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+@keyframes  textAnimationBottom-320x50{
+    0%, 100% {
+      opacity: 0;
+      transform:translate(0%,0%)
+    }
+    20%{transform:translate(2%,-2%)}
+  
+    20%,70% {
+      opacity: 1;
+      transform:translate(2%,-2%)
+    }
+  
+  }
+
+.container320x50 .CTAtext {
+    width: 100%;
+    height: 50px;
+    font-family: Produkt-Regular;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 9px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container320x50 .CTAtext img {
+    width: auto;
+    height: 26px;
+}
+.container320x50 .CTAtext h1 {
+    font-size: 14px !important;
+    line-height: unset !important;
+    margin-bottom: 5px !important;
+}
+.container320x50 .CTAtext a{
+    font-size: 8px !important;
+    padding: 3px 9px;
+}
+
+.container320x50.animate1 .CTAtext{
+    animation: textAnimationTop 1s;
+    animation-fill-mode: both;
+    animation-delay: 6.5s;
+}
+
+.container320x50 .CTAtext-animation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transform: translateX(-10px) !important;
+}
+
+.container320x50.animate1 .CTAtext-animation{
+    animation: textAnimationTop 1.125s;
+    animation-fill-mode: both;
+    animation-delay: 8s;
+}
+
+/* 728x90 -------------------------------------*/
+.container728x90{
+    width: 728px;
+    height: 90px;
+    justify-content: unset;
+    align-items: unset;
+}
+.container728x90 .image-wrapper{
+    /* width: 40%; */
+    height: 100%;
+}
+.container728x90 .image-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.container728x90 .pulse-wrapper{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container728x90 .one{
+    z-index: 9;
+    transform: translate(150%, -150%) scale(1.6);
+}
+
+.container728x90.animate1 .one{
+    animation: pulse1-728x90 2s;
+    animation-delay: 1.25s;
+    animation-fill-mode: both;
+}
+@keyframes pulse1-728x90 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(50%, -51%) scale(0.9);
+    }
+    100%{
+        transform: translate(50%, -51%) scale(0.8);
+    }
+}
+
+.container728x90 .two{
+    z-index: 8;
+    transform: translate(150%, -150%) scale(1.6);
+}
+.container728x90.animate1 .two{
+    animation: pulse2-728x90 2.2s;
+    animation-delay: 1.35s;
+    animation-fill-mode: both;
+}
+@keyframes pulse2-728x90 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(49%, -52%) scale(0.8);
+    }
+    100%{
+        transform: translate(49%, -52%) scale(0.7);
+    }
+}
+
+.container728x90 .three{
+    z-index: 7;
+    transform: translate(150%, -150%) scale(1.6);
+}
+.container728x90.animate1 .three{
+    animation: pulse3-728x90 2.4s;
+    animation-delay: 1.45s;
+    animation-fill-mode: both;
+}
+@keyframes pulse3-728x90 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(48%, -54%) scale(0.8);
+    }
+    100%{
+        transform: translate(48%, -54%) scale(0.7);
+    }
+}
+
+.container728x90 .four{
+    z-index: 6;
+    transform: scale(1.6) translate(150%, -150%);
+}
+.container728x90.animate1 .four{
+    animation: pulse4-728x90 2s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+@keyframes pulse4-728x90 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    100%{
+        transform: translate(0%, 0%) scale(2.6);
+    }
+}
+
+.container728x90 .h1{
+    font-size: 24px !important;
+    line-height: 30px !important;
+    z-index: 9999;
+    position: relative;
+    transition: 1s all;
+}
+
+.container728x90.animate1 .h1{
+    animation: textAnimationBottom-728x90 5s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+@keyframes  textAnimationBottom-728x90{
+    0%, 100% {
+      opacity: 0;
+      transform:translate(0%,0%)
+    }
+    20%{transform:translate(2%,-2%)}
+  
+    20%,70% {
+      opacity: 1;
+      transform:translate(2%,-2%)
+    }
+  
+}
+.container728x90 .CTAtext {
+    width: 100%;
+    height: 100%;
+    font-family: Produkt-Regular;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 9px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+.container728x90 .CTAtext img {
+    width: auto;
+    height: 42px;
+}
+.container728x90 .CTAtext h1 {
+    font-size: 28px !important;
+    line-height: unset !important;
+    margin-bottom: 0 !important;
+}
+.container728x90 .CTAtext a{
+    font-size: 12px;
+    padding: 5px 14px;
+    margin-bottom: 0;
+    margin-left: 11px;
+}
+
+.container728x90.animate1 .CTAtext{
+    animation: textAnimationTop 1s;
+    animation-fill-mode: both;
+    animation-delay: 6.5s;
+}
+
+.container728x90 .CTAtext-animation{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-20px);
+}
+
+.container728x90.animate1 .CTAtext-animation{
+    animation: textAnimationTop 1.125s;
+    animation-fill-mode: both;
+    animation-delay: 8s;
+}
+
+/* 970x250 --------------------------------------------*/
+.container970x250{
+    width: 970px;
+    height: 250px;
+}
+.container970x250 .image-wrapper{
+    width: 40%;
+    height: 100%;
+}
+.container970x250 .image-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.container970x250 .pulse-wrapper{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.container970x250 .one{
+    z-index: 9;
+    transform: translate(150%, -150%) scale(1.6);
+}
+
+.container970x250.animate1 .one{
+    animation: pulse1-970x250 2s;
+    animation-delay: 1.25s;
+    animation-fill-mode: both;
+}
+@keyframes pulse1-970x250 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(50%, -51%) scale(1.3);
+    }
+    100%{
+        transform: translate(50%, -51%) scale(1.2);
+    }
+}
+
+.container970x250 .two{
+    z-index: 8;
+    transform: translate(150%, -150%) scale(1.6);
+}
+.container970x250.animate1 .two{
+    animation: pulse2-970x250 2.2s;
+    animation-delay: 1.35s;
+    animation-fill-mode: both;
+}
+@keyframes pulse2-970x250 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(49%, -52%) scale(1.10);
+    }
+    100%{
+        transform: translate(49%, -52%) scale(1.05);
+    }
+}
+
+.container970x250 .three{
+    z-index: 7;
+    transform: translate(150%, -150%) scale(1.6);
+}
+.container970x250.animate1 .three{
+    animation: pulse3-970x250 2.4s;
+    animation-delay: 1.45s;
+    animation-fill-mode: both;
+}
+@keyframes pulse3-970x250 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    50%{
+        transform: translate(48%, -54%) scale(1.1);
+    }
+    100%{
+        transform: translate(48%, -54%) scale(1);
+    }
+}
+
+.container970x250 .four{
+    z-index: 6;
+    transform: scale(1.6) translate(150%, -150%);
+}
+.container970x250.animate1 .four{
+    animation: pulse4-970x250 4s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+@keyframes pulse4-970x250 {
+    0%{
+        transform: translate(150%, -150%) scale(1.6);
+    }
+    100%{
+        transform: translate(0%, 0%) scale(2.6);
+    }
+}
+
+
+.container970x250 h1{
+    font-size: 35px !important;
+    line-height: 40px !important;
+    z-index: 9999;
+    position: relative;
+    transition: 1s all;
+}
+
+.container970x250.animate1 .h1{
+    animation: textAnimationBottom-970x250 5s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+
+@keyframes  textAnimationBottom-970x250{
+    0%, 100% {
+      opacity: 0;
+      transform:translate(0%,0%)
+    }
+    20%{transform:translate(2%,-2%)}
+  
+    20%,70% {
+      opacity: 1;
+      transform:translate(2%,-2%)
+    }
+  
+}
+.container970x250 .CTAtext {
+    width: 100%;
+    height: 100%;
+    font-family: Produkt-Regular;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px 35px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container970x250 .CTAtext img {
+    width: 27%;
+    height: auto;
+}
+.container970x250 .CTAtext h1 {
+    font-size: 37px !important;
+    line-height: unset !important;
+    margin-bottom: 20px !important;
+}
+.container970x250 .CTAtext a{
+    font-size: 17px;
+    margin-left: 0;
+    padding: 8px 18px;
+}
+
+.container970x250.animate1 .CTAtext{
+    animation: textAnimationTop 1s;
+    animation-fill-mode: both;
+    animation-delay: 6.3s;
+}
+
+.container970x250 .CTAtext-animation{
+    transform: translateX(0);
+}
+
+.container970x250.animate1 .CTAtext-animation{
+    animation: textAnimationTop 1.125s;
+    animation-fill-mode: both;
+    animation-delay: 8s;
+}
